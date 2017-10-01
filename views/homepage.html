@@ -1,0 +1,2537 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Modern Business - Start Bootstrap Template</title>
+
+  <!-- Bootstrap Core CSS -->
+  <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="../css/modern-business.css" rel="stylesheet">
+
+  <!-- Custom Fonts -->
+  <link href="../font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Galindo' rel='stylesheet'>
+
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.../js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+  <style type="text/css">
+
+
+    @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+    *{
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    .centered {
+      padding-left: 0;
+      padding-right: 0;
+      width:85%;
+      margin: 0px auto;
+    }
+
+    .row.mariam > [class*='col-'] {
+      padding-right:0;
+      padding-left:0;
+    }
+
+    /*NavBar*/
+
+    .navbar-collapse {
+      border-color: #8e0247;
+    }
+
+    .navbar-brand {
+      font-family: 'Galindo';
+      font-size: 27px;
+      padding-left: 0;
+      font-weight: lighter;
+    }
+
+    .navbar {
+      border: 0;
+      margin-bottom: 0;
+      padding-top: 0.5%;
+      padding-bottom: 0.5%;
+      border-radius: 0;
+      background: #8e0247;
+    }
+
+    .no-radius {
+      border-radius: 0;
+    }
+
+    /*END NavBar*/
+
+    /*Jumbotron*/
+
+    .jumbotron {
+      padding-top: 8%;
+      color: inherit;
+      background-color: #f9f9f9;
+      text-align: center;
+      background-size: cover;
+      background: linear-gradient(to top, #0e0a34 0%, #e60046 150%);
+    }   
+
+    /*END Jumbotrn*/
+
+
+    button[name="x"]:hover {
+      color: #FFFFFF;
+      background-color: #e60046;
+
+    }
+
+    button[name="x"]:focus {
+      color: #FFFFFF;
+      background-color: #e60046;
+
+    }
+
+    button:active {
+      color: #FFFFFF;
+    }
+
+
+    /*SearchBox*/
+
+    .search-box {
+      width: 98%;
+      margin: 0 auto;
+    }
+
+    .transparent{
+      background:rgba(255,255,255,0.1);
+      min-height: 80px;
+      width: 80%;
+      margin: auto;
+      border: 0;
+      border-style: solid;
+      overflow: hidden;
+      display: inline-block;
+      margin-top: 5%;
+    }
+
+
+    .search-input {
+      height: 42px;
+    }
+
+
+
+    @media screen and  (max-width: 700px){
+
+      .search_btn {
+        margin-top: 25px;
+        margin-bottom:20px;
+        min-width : 150px;
+        width: 14%;
+        height: 42px;
+        background-color: #e60046;
+        color: #ffffff;
+        white-space: normal;
+      }
+
+      .search-text {
+        margin-top: 20px;
+        margin-left: 0%;
+      }
+
+      .search-select-right {
+        height: 42px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background: url(../images/arrowdown.png) 98% / 23px no-repeat #FFFFFF;
+        margin-top: 10px;
+      }
+
+      .search-select-left  {
+        height: 42px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background: url(../images/arrowdown.png) 98% / 23px no-repeat #FFFFFF;
+        margin-top: 10px;
+      }
+    }
+
+    @media screen and (max-width: 360px){
+      .search_btn {
+        margin-top: 25px;
+        margin-bottom:20px;
+        min-width : 150px;
+        width: 14%;
+        height: 42px;
+        background-color: #e60046;
+        color: #ffffff;
+        white-space: normal;
+      }
+
+      .search-text {
+        margin-top: 20px;
+        margin-left: 0px;
+      }
+
+      .search-select-right {
+        height: 42px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background: url(../images/arrowdown.png) 98% / 23px no-repeat #FFFFFF;
+        margin-top: 10px;
+      }
+
+      .search-select-left  {
+        height: 42px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background: url(../images/arrowdown.png) 98% / 23px no-repeat #FFFFFF;
+        margin-top: 10px;
+      }
+    }
+
+    @media screen and (min-width: 360px) and (max-width: 992px){
+      .search_btn {
+        margin-top: 25px;
+        margin-bottom:20px;
+        min-width : 208px;
+        width: 14%;
+        height: 42px;
+        background-color: #e60046;
+        color: #ffffff;
+        white-space: normal;
+      }
+
+      .search-text {
+        margin-top: 20px;
+        margin-left: 0px;
+      }
+
+      .search-select-right {
+        height: 42px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background: url(../images/arrowdown.png) 98% / 23px no-repeat #FFFFFF;
+        margin-top: 10px;
+      }
+
+      .search-select-left  {
+        height: 42px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background: url(../images/arrowdown.png) 98% / 23px no-repeat #FFFFFF;
+        margin-top: 10px;
+      }
+    }
+
+    @media screen and (min-width: 992px) and (max-width:1000px)  {
+
+      .search_btn {
+        margin-top: 20px;
+        margin-right: -60px;
+        min-width : 20%;
+        width: 14%;
+        height: 42px;
+        background-color: #e60046;
+        color: #ffffff;
+        white-space: normal;
+      }
+
+      .search-text {
+        margin-top: 20px;
+        margin-left: -5px;
+        margin-right: 10px;
+      }
+
+      .search-select-left {
+        height: 42px;
+        margin-left: -30px;
+        margin-right: 0px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background: url(../images/arrowdown.png) 96% / 23px no-repeat #FFFFFF;
+        margin-top: 20px;
+      }
+
+      .search-select-right {
+        height: 42px;
+        margin-left: 8px;
+        margin-right: 0px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background: url(../images/arrowdown.png) 96% / 23px no-repeat #FFFFFF;
+        margin-top: 20px;
+      }
+
+      .transparent{
+        background:rgba(255,255,255,0.1);
+        min-height: 80px;
+        width: 82%;
+        margin: 0 auto;
+        border: 0;
+        border-style: solid;
+        overflow: hidden;
+        display: inline-block;
+        margin-top: 40px;
+      }
+    }
+
+    @media screen and (min-width: 1001px) and (max-width:1031px)  {  
+
+      .search_btn {
+        margin-top: 20px;
+        margin-right: -60px;
+        min-width : 21%;
+        width: 14%;
+        height: 42px;
+        background-color: #e60046;
+        color: #ffffff;
+        white-space: normal;
+      }
+
+      .search-text {
+        margin-top: 20px;
+        margin-left: -5px;
+        margin-right: 10px;
+      }
+
+      .search-select-left {
+        height: 42px;
+        margin-left: -29px;
+        margin-right: 0px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background: url(../images/arrowdown.png) 96% / 23px no-repeat #FFFFFF;
+        margin-top: 20px;
+      }
+
+      .search-select-right {
+        height: 42px;
+        margin-left: 8px;
+        margin-right: 0px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background: url(../images/arrowdown.png) 96% / 23px no-repeat #FFFFFF;
+        margin-top: 20px;
+      }
+    }
+
+    @media screen and (min-width: 1031px) and (max-width:1065px)  {  
+
+      .search_btn {
+        margin-top: 20px;
+        margin-right: -60px;
+        min-width : 21%;
+        width: 14%;
+        height: 42px;
+        background-color: #e60046;
+        color: #ffffff;
+        white-space: normal;
+      }
+
+      .search-text {
+        margin-top: 20px;
+        margin-left: -5px;
+        margin-right: 10px;
+
+      }
+
+      .search-select-left {
+        height: 42px;
+        margin-left: -27px;
+        margin-right: 0px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background: url(../images/arrowdown.png) 96% / 23px no-repeat #FFFFFF;
+        margin-top: 20px;
+      }
+
+      .search-select-right {
+        height: 42px;
+        margin-left: 9px;
+        margin-right: 0px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background: url(../images/arrowdown.png) 96% / 23px no-repeat #FFFFFF;
+        margin-top: 20px;
+      }
+    }
+
+    @media screen and (min-width: 1065px) and (max-width:1090px)  {  
+
+      .search_btn {
+        margin-top: 20px;
+        margin-right: -55px;
+        min-width : 21%;
+        width: 14%;
+        height: 42px;
+        background-color: #e60046;
+        color: #ffffff;
+        white-space: normal;
+      }
+
+      .search-text {
+        margin-top: 20px;
+        margin-left: -5px;
+        margin-right: 10px;
+        min-width:35%;
+      }
+
+      .search-select-left {
+        height: 42px;
+        margin-left: -28px;
+        margin-right: 0px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background: url(../images/arrowdown.png) 96% / 23px no-repeat #FFFFFF;
+        margin-top: 20px;
+      }
+
+      .search-select-right {
+        height: 42px;
+        margin-left: 3px;
+        margin-right: 0px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background: url(../images/arrowdown.png) 96% / 23px no-repeat #FFFFFF;
+        margin-top: 20px;
+      }
+
+    }
+
+    @media screen and (min-width: 1090px) and (max-width:1118px)  {  
+
+      .search_btn {
+       margin-top: 20px;
+       margin-right: -40px;
+       min-width : 22%;
+       width: 14%;
+       height: 42px;
+       background-color: #e60046;
+       color: #ffffff;
+       white-space: normal;
+      }
+
+      .search-text {
+        margin-top: 20px;
+        margin-left: -5px;
+        margin-right: 10px;
+        min-width:36%;
+      }
+
+      .search-select-left {
+        height: 42px;
+        margin-left: -28px;
+        margin-right: 0px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background: url(../images/arrowdown.png) 96% / 23px no-repeat #FFFFFF;
+        margin-top: 20px;
+      }
+
+      .search-select-right {
+        height: 42px;
+        margin-left: -2px;
+        margin-right: 0px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background: url(../images/arrowdown.png) 96% / 23px no-repeat #FFFFFF;
+        margin-top: 20px;
+      }
+    }
+
+
+    @media screen and (min-width: 1118px) and (max-width:1160px)  {  
+
+      .search_btn {
+        margin-top: 20px;
+        margin-right: -38px;
+        min-width : 23%;
+        width: 14%;
+        height: 42px;
+        background-color: #e60046;
+        color: #ffffff;
+        white-space: normal;
+      }  
+
+      .search-text {
+        margin-top: 20px;
+        margin-left: -5px;
+        margin-right: 10px;
+        min-width:36%;
+      }
+
+      .search-select-left {
+        height: 42px;
+        margin-left: -27px;
+        margin-right: 0px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background: url(../images/arrowdown.png) 96% / 23px no-repeat #FFFFFF;
+        margin-top: 20px;
+      }
+
+      .search-select-right {
+        height: 42px;
+        margin-left: -1px;
+        margin-right: 0px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background: url(../images/arrowdown.png) 96% / 23px no-repeat #FFFFFF;
+        margin-top: 20px;
+      }
+    }
+
+    @media screen and (min-width: 1160px) and (max-width:1199px)  {  
+
+      .search_btn {
+       margin-top: 20px;
+       margin-right: -29px;
+       min-width : 24%;
+       width: 14%;
+       height: 42px;
+       background-color: #e60046;
+       color: #ffffff;
+       white-space: normal;
+      }
+
+      .search-text {
+        margin-top: 20px;
+        margin-left: -5px;
+        margin-right: 10px;
+        min-width:36%;
+      }
+
+      .search-select-left {
+        height: 42px;
+        margin-left: -28px;
+        margin-right: 0px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background: url(../images/arrowdown.png) 96% / 23px no-repeat #FFFFFF;
+        margin-top: 20px;
+      }
+
+      .search-select-right {
+        height: 42px;
+        margin-left: -9px;
+        margin-right: 0px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background: url(../images/arrowdown.png) 96% / 23px no-repeat #FFFFFF;
+        margin-top: 20px;
+      }
+    }
+
+
+    @media screen and (min-width: 1199px) and (max-width:1220px)  {  
+
+      .search_btn {
+        margin-top: 20px;
+        margin-left: -6px;
+        margin-right:-26px;
+        min-width : 25%;
+        width:14%;
+        height: 42px;
+        background-color: #e60046;
+        color: #ffffff;
+        white-space: normal;
+      }
+
+      .search-text {
+        margin-top: 20px;
+        margin-left: -7px;
+        width: 38%;
+      }
+
+      .search-select-right {
+        height: 42px;
+        margin: 0px;
+        margin-left: -6px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background: url(../images/arrowdown.png) 96% / 23px no-repeat #FFFFFF;
+        margin-top: 20px;
+      }
+
+      .search-select-left  {
+        height: 42px;
+        margin-left: -20px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background: url(../images/arrowdown.png) 96% / 23px no-repeat #FFFFFF;
+        margin-top: 20px;
+      }
+    }
+
+    @media screen and (min-width: 1220px) and (max-width:1232px)  {  
+      .search_btn {
+        margin-top: 20px;
+        margin-left: -6px;
+        margin-right:-26px;
+        min-width : 25%;
+        width:14%;
+        height: 42px;
+        background-color: #e60046;
+        color: #ffffff;
+        white-space: normal;
+      }
+
+      .search-text {
+        margin-top: 20px;
+        margin-left: -8px;
+        width: 38%;
+      }
+
+      .search-select-right {
+        height: 42px;
+        margin: 0px;
+        margin-left: -10px;
+
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background: url(../images/arrowdown.png) 96% / 23px no-repeat #FFFFFF;
+        margin-top: 20px;
+      }
+
+      .search-select-left  {
+        height: 42px;
+        margin-left: -21px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background: url(../images/arrowdown.png) 96% / 23px no-repeat #FFFFFF;
+        margin-top: 20px;
+      }
+    }
+
+    @media screen and (min-width: 1232px) and (max-width:1255px)  {  
+      .search_btn {
+        margin-top: 20px;
+        margin-left: -6px;
+        margin-right:-27px;
+        min-width : 25%;
+        width:14%;
+        height: 42px;
+        background-color: #e60046;
+        color: #ffffff;
+        white-space: normal;
+      }
+
+      .search-text {
+        margin-top: 20px;
+        margin-left: -8px;
+        width: 38%;
+      }
+
+      .search-select-right {
+        height: 42px;
+        margin: 0px;
+        margin-left: -8px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background: url(../images/arrowdown.png) 96% / 23px no-repeat #FFFFFF;
+        margin-top: 20px;
+      }
+
+      .search-select-left  {
+        height: 42px;
+        margin-left: -18px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background: url(../images/arrowdown.png) 96% / 23px no-repeat #FFFFFF;
+        margin-top: 20px;
+      }
+    }
+
+    @media screen and (min-width: 1255px) and (max-width:1280px)  {  
+      .search_btn {
+        margin-top: 20px;
+        margin-left: -4px;
+        margin-right:-20px;
+        min-width : 25%;
+        width:14%;
+        height: 42px;
+        background-color: #e60046;
+        color: #ffffff;
+        white-space: normal;
+      }
+
+      .search-text {
+        margin-top: 20px;
+        margin-left: -7px;
+        width: 39%;
+      }
+
+      .search-select-right {
+        height: 42px;
+        margin: 0px;
+        margin-left: -12px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background: url(../images/arrowdown.png) 96% / 23px no-repeat #FFFFFF;
+        margin-top: 20px;
+      }
+
+      .search-select-left  {
+        height: 42px;
+        margin-left: -20px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background: url(../images/arrowdown.png) 96% / 23px no-repeat #FFFFFF;
+        margin-top: 20px;
+      }
+    }
+
+    @media screen and (min-width: 1280px) and (max-width:1300px)  {  
+      .search_btn {
+        margin-top: 20px;
+        margin-left: -4px;
+        margin-right:-20px;
+        min-width : 25%;
+        width:14%;
+        height: 42px;
+        background-color: #e60046;
+        color: #ffffff;
+        white-space: normal;
+      }
+
+      .search-text {
+        margin-top: 20px;
+        margin-left: -7px;
+        width: 39%;
+      }
+
+      .search-select-right {
+        height: 42px;
+        margin: 0px;
+        margin-left: -15px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background: url(../images/arrowdown.png) 96% / 23px no-repeat #FFFFFF;
+        margin-top: 20px;
+      }
+
+      .search-select-left  {
+        height: 42px;
+        margin-left: -20px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background: url(../images/arrowdown.png) 96% / 23px no-repeat #FFFFFF;
+        margin-top: 20px;
+      }
+    }
+
+
+    @media screen and (min-width: 1300px) and (max-width:1319px)  {  
+      .search_btn {
+        margin-top: 20px;
+        margin-left: -6px;
+        margin-right:-15px;
+        min-width : 25%;
+        width:14%;
+        height: 42px;
+        background-color: #e60046;
+        color: #ffffff;
+        white-space: normal;
+      }
+
+      .search-text {
+        margin-top: 20px;
+        margin-left: -7px;
+        width: 40%;
+      }
+
+      .search-select-right {
+        height: 42px;
+        margin: 0px;
+        margin-left: -16px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background: url(../images/arrowdown.png) 96% / 23px no-repeat #FFFFFF;
+        margin-top: 20px;
+      }
+
+      .search-select-left  {
+        height: 42px;
+        margin-left: -20px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background: url(../images/arrowdown.png) 96% / 23px no-repeat #FFFFFF;
+        margin-top: 20px;
+      }
+    }
+
+
+    @media screen and (min-width: 1319px) and (max-width:1355px)  {  
+      .search_btn {
+        margin-top: 20px;
+        margin-left: -6px;
+        margin-right:-15px;
+        min-width : 25%;
+        width:14%;
+        height: 42px;
+        background-color: #e60046;
+        color: #ffffff;
+        white-space: normal;
+      }
+
+      .search-text {
+        margin-top: 20px;
+        margin-left: -7px;
+        width: 40%;
+      }
+
+      .search-select-right {
+        height: 42px;
+        margin: 0px;
+        margin-left: -20px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background: url(../images/arrowdown.png) 96% / 23px no-repeat #FFFFFF;
+        margin-top: 20px;
+      }
+
+      .search-select-left  {
+        height: 42px;
+        margin-left: -20px;
+        -webkit-appearance: none;
+        -moz-appearance:none;
+        appearance: none;
+        background: url(../images/arrowdown.png) 96% / 23px no-repeat #FFFFFF;
+        margin-top: 20px;
+      }
+    }
+
+
+    @media screen and (min-width: 1350px) and (max-width: 1400px){
+      .search_btn {
+        margin-top: 20px;
+        margin-left: -15px;
+        margin-right:-7px;
+        min-width : 25%;
+        width:14%;
+        height: 42px;
+        background-color: #e60046;
+        color: #ffffff;
+        white-space: normal;
+      }
+
+      .search-text {
+        margin-top: 20px;
+        margin-left: -5px;
+        width: 41%;
+      }
+
+      .search-select-right {
+        height: 42px;
+        margin: 0px;
+        margin-left: -30px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background: url(../images/arrowdown.png) 96% / 23px no-repeat #FFFFFF;
+        margin-top: 20px;
+      }
+
+      .search-select-left  {
+        height: 42px;
+        margin-left: -22px;
+        /*margin-right: -3%;*/
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background: url(../images/arrowdown.png) 96% / 23px no-repeat #FFFFFF;
+        margin-top: 20px;
+      }
+    }
+
+
+    @media screen and (min-width: 1400px) and (max-width: 1429px){
+      .search_btn {
+        margin-top: 20px;
+        margin-left: -15px;
+        margin-right:-7px;
+        min-width : 25%;
+        width:14%;
+        height: 42px;
+        background-color: #e60046;
+        color: #ffffff;
+        white-space: normal;
+      }
+
+      .search-text {
+        margin-top: 20px;
+        margin-left: -5px;
+        width: 41%;
+      }
+
+      .search-select-right {
+        height: 42px;
+        margin: 0px;
+        margin-left: -33px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background: url(../images/arrowdown.png) 96% / 23px no-repeat #FFFFFF;
+        margin-top: 20px;
+      }
+
+      .search-select-left  {
+        height: 42px;
+        margin-left: -22px;
+        /*margin-right: -3%;*/
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background: url(../images/arrowdown.png) 96% / 23px no-repeat #FFFFFF;
+        margin-top: 20px;
+      }
+    }
+
+
+    @media screen and (min-width: 1430px) and (max-width: 1450px){
+      .search_btn {
+        margin-top: 20px;
+        margin-left: -15px;
+        margin-right:-7px;
+        min-width : 25%;
+        width:14%;
+        height: 42px;
+        background-color: #e60046;
+        color: #ffffff;
+        white-space: normal;
+      }
+
+      .search-text {
+        margin-top: 20px;
+        margin-left: -5px;
+        width: 41%;
+      }
+
+      .search-select-right {
+        height: 42px;
+        margin: 0px;
+        margin-left: -36px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background: url(../images/arrowdown.png) 96% / 23px no-repeat #FFFFFF;
+        margin-top: 20px;
+      }
+
+      .search-select-left  {
+        height: 42px;
+        margin-left: -22px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background: url(../images/arrowdown.png) 96% / 23px no-repeat #FFFFFF;
+        margin-top: 20px;
+      }
+    }
+
+    @media screen and (min-width: 1450px) and (max-width: 1470px){
+      .search_btn {
+        margin-top: 20px;
+        margin-left: -15px;
+        margin-right:-7px;
+        min-width : 25%;
+        width:14%;
+        height: 42px;
+        background-color: #e60046;
+        color: #ffffff;
+        white-space: normal;
+      }
+
+      .search-text {
+        margin-top: 20px;
+        margin-left: -5px;
+        width: 41%;
+      }
+
+      .search-select-right {
+        height: 42px;
+        margin: 0px;
+        margin-left: -40px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background: url(../images/arrowdown.png) 96% / 23px no-repeat #FFFFFF;
+        margin-top: 20px;
+      }
+
+      .search-select-left  {
+        height: 42px;
+        margin-left: -22px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background: url(../images/arrowdown.png) 96% / 23px no-repeat #FFFFFF;
+        margin-top: 20px;
+      }
+    }
+
+    @media screen and (min-width: 1470px) {  
+      .search_btn {
+        margin-top: 20px;
+        margin-left: -15px;
+        margin-right:-7px;
+        min-width : 25%;
+        width:14%;
+        height: 42px;
+        background-color: #e60046;
+        color: #ffffff;
+        white-space: normal;
+      }
+
+      .search-text {
+        margin-top: 20px;
+        margin-left: -5px;
+        width: 41%;
+      }
+
+      .search-select-right {
+        height: 42px;
+        margin: 0px;
+        margin-left: -42px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background: url(../images/arrowdown.png) 96% / 23px no-repeat #FFFFFF;
+        margin-top: 20px;
+      }
+
+      .search-select-left  {
+        height: 42px;
+        margin-left: -22px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background: url(../images/arrowdown.png) 96% / 23px no-repeat #FFFFFF;
+        margin-top: 20px;
+      }
+    }
+
+    /*END SearchBox*/
+
+    /*Category Buttons*/
+
+
+    .category-image {
+      position: relative;
+      background-image: url('../images/100.jpg');
+      background-position: center;
+      background-size: cover;
+      width:99%;
+      margin-bottom: 2%;
+      min-height: 65px;
+    }
+
+    @media (max-width:768px) { 
+      .category-image {
+        position: relative;
+        background-image: url('../images/100.jpg');
+        background-position: center;
+        background-size: cover;
+        width:100%;
+        margin-bottom: 2%;
+        min-height: 65px;
+      }
+
+    }
+
+
+    .black {
+      background-color:rgba(0,0,0,0.8);
+      position: absolute;
+      top: 0px; 
+      right: 0px; 
+      width:100%; 
+      height: 100%;
+    }
+
+    div[type= "hover"]:hover {
+      background-color:rgba(230, 0, 70,0.8);
+      position: absolute;
+      top: 0px; 
+      right: 0px; 
+      width:100%; 
+      height: 100%;
+    }
+
+    .white-text {
+      color: #FFFFFF;
+    }
+
+    .category_btn{
+      color: #FFFFFF;
+      border-radius:0;
+      background: transparent;
+      height: 100%;
+      padding: 20px;
+    }
+
+    button[name = "x"]:onClick {
+      color: #FFFFFF;
+      background: #e60046;
+    }
+
+    /*END Category Buttons*/
+
+
+    /*Modal*/
+
+    label[name="x"] {
+      margin-bottom: 10px;
+    }
+
+    .modal-content{
+      border-radius: 0; 
+    }
+    .modal-header {
+      padding-bottom: 5px;
+    }
+
+    textarea {
+      resize:none;
+    }
+
+    .modal-header .close {
+      padding-top:5px;
+      padding-right: 2px;
+    }
+
+    .modal-footer {
+      padding: 0;
+    }
+
+    .modal-footer .btn-group {
+      height:40px;
+      border-top-left-radius : 0;
+      border-top-right-radius : 0;
+      border: none;
+      border-right: 1px solid #ddd;
+    }
+
+    .modal-footer .btn-group:last-child > button {
+      border-right: 0;
+    }
+
+    body.modal-open {
+      padding-right: 0 !important;
+      overflow: inherit;
+    }
+    body.modal-open, .modal-open .navbar-fixed-top, .modal-open .navbar-fixed-bottom { margin-right: 0; }
+
+    button[name="tw"]:hover {
+      background: #00adf2; 
+      color: #FFFFFF;
+    }
+
+    button[name="tw"]:focus {
+      background: #00adf2; 
+      color: #FFFFFF;
+    }
+
+    button[name="tw"]:active {
+      background: #00adf2; 
+      color: #FFFFFF;
+    }
+
+    .twitter-btn {
+      margin-bottom: 20px;
+      margin-left: 70px; 
+      border-radius: 15px; 
+      background: #00adf2; 
+      color: #FFFFFF; 
+      height: 45px; 
+      width: 185px; 
+      font-size:16px; 
+      margin-top: 20px;
+    }
+
+    button[name="fb"]:hover {
+      background: #0c2c67; 
+      color: #FFFFFF; 
+    }
+
+    button[name="fb"]:focus {
+      background: #0c2c67; 
+      color: #FFFFFF; 
+    }
+
+    button[name="fb"]:active {
+      background: #0c2c67; 
+      color: #FFFFFF; 
+    }
+
+    .fb-btn {
+      margin-bottom: 20px;
+      margin-right:70px;
+      border-radius: 15px; 
+      background: #0c2c67; 
+      color: #FFFFFF; 
+      height: 45px; 
+      width: 185px; 
+      font-size:16px; 
+      margin-top: 20px;
+    }
+
+    button[name="xx"]:hover {
+      background: linear-gradient(to right, #0e0a34 0%, #e60046 100%); 
+      color: #FFFFFF; 
+    }
+
+    button:active {
+      color: #FFFFFF;
+    }
+
+    button[name="xx"]:focus {
+      background: linear-gradient(to right, #0e0a34 0%, #e60046 100%); 
+      color: #FFFFFF; 
+    }
+
+    .popup-btn {
+      background: linear-gradient(to right, #0e0a34 0%, #e60046 100%); 
+      color: #FFFFFF; 
+      height: 50px; 
+      width: 200px; 
+      font-size:16px; 
+      margin-top: 20px; 
+      margin-bottom: 10px;
+      border:0;
+    }
+
+    .popup-form{
+      margin: 0 auto;
+    }
+
+    .fa-2{
+      font-size:1.6em;
+    }
+
+    .modal-header{
+      border-bottom: 2px solid #ececed;
+    }
+
+    .modal-title {
+      font-weight: bold;
+      font-size: 25px;
+    }
+
+    .modal-footer{
+      border-top: none;
+    }
+
+    h4  {
+     width: 100%; 
+     text-align: center; 
+     border-bottom: 2px solid #ececed; 
+     line-height: 0.2em;
+     margin: 10px 0 20px; 
+    }
+
+    h4 span{ 
+      background: #FFFFFF; 
+      padding:0 10px; 
+
+    }
+
+    .modal-footer-text{
+      width: 90%;
+      margin: 0 auto;
+    }
+
+    @media only screen and (max-width : 768px) {
+
+      .twitter-btn {
+        margin: 2%;
+        width: 210px;
+      }
+
+      .fb-btn {
+        width: 210px;
+        margin-bottom: 3%;
+        margin: 2%;
+      }
+
+      .modal-dialog {
+        width: 500px;
+        margin: 30px auto;
+      }
+    }
+
+    @media only screen and (width: 768px){
+      .fb-btn{
+        margin-bottom: 20px;
+        margin-right:40px; 
+        width: 173px; 
+        margin-top: 20px
+      }
+
+      .twitter-btn {
+        margin-bottom: 20px;
+        margin-left: 40px;
+        width: 173px; 
+        margin-top: 20px;
+      }
+    }
+
+    @media screen and (max-width: 600px){
+      .modal-dialog {
+        width: 450px;
+        margin: 30px auto;
+      }
+    }
+
+    @media (max-width: 520px){
+      .modal-dialog {
+        width: 400px;
+        margin: 30px auto;
+      }
+    }
+
+
+    @media (max-width: 500px){
+      .modal-dialog {
+        width: 380px;
+        margin: 30px auto;
+      }
+    }
+
+    @media (max-width: 450px){
+      .modal-dialog {
+        width: 350px;
+        margin: 30px auto;
+      }
+    }
+
+    @media (max-width: 400px){
+      .modal-dialog {
+        width: 90%;
+        margin: 30px auto;
+      }
+      .popup-btn {
+        width: 60%; 
+        font-size:16px; 
+        margin: auto;
+      }
+    }
+
+    /*END Modal*/
+
+
+    /*Footer*/
+
+    div .row.mariam.newnew {
+      display: none;
+    }
+
+    div .row.mariam.new {
+      display: none;
+    }
+
+    footer{
+      margin-top:3%;
+      margin-bottom:0;
+    }
+
+    footer-icons {
+      margin-top: 4%;
+    }
+
+    .fa-2x{
+      font-size:1.8em;
+    }
+
+    .footer {
+      margin: 3% 0 0 0 0;
+      height: 10%;
+      width: 100%;
+      color: #FFFFFF;
+      background-color: #0a061a;
+    }
+
+    .join_btn {
+      width:100%;
+      height: 42px;
+      background-color: #e60046;
+      color: #ffffff;
+      white-space: normal;
+      border:0;
+    }
+
+    .footer-text {
+      min-width: 40px; 
+      height: 42px; 
+      margin-right: 5px;
+    }
+
+    .footer-text {
+      width:98%;  
+    }
+
+    .footer-form {
+      padding-top: 66px;
+    }
+
+    .label-footer {
+      padding-bottom: 5px; margin-left: -11px;
+    }
+
+    @media screen and (max-width: 502px){
+      div .row.mariam.newnew {
+        display: inline;
+      }
+
+      div .row.mariam.oldold {
+        display: none;
+      }
+
+
+      .fa-2x{
+        font-size:1.8em;
+      }
+
+      .join_btn {
+        width: 100% ;  
+      }
+
+      .footer-text {
+        width:98%; 
+
+      }
+
+      .footer-form {
+        padding-top: 0px;
+      }
+    }
+
+    @media screen and (min-width: 502px) and (max-width: 769px){
+      div .row.mariam.old{
+        display: none;
+      }
+      div .row.mariam.new{
+        display: inline;
+      }
+
+      .fa-2x{
+        font-size:1.6em;
+      }
+
+      .join_btn {
+        min-width: 150px ;
+        margin-top: 5px;
+
+      }
+
+      .footer-text {
+        width:100%;  
+      }
+
+      .label-footer {
+        margin-left: 2px;
+      }
+
+      .footer-form {
+        margin-left:  4%;
+        padding-top: 40px;
+      }
+    }
+
+    @media screen and (min-width: 769px) and (max-width: 935px){
+      .fa-2x{
+        font-size:1.6em;
+      }
+      .join_btn {
+        min-width: 150px ;
+      }
+
+      .footer-text {
+        width:98%;  
+      }
+
+      .footer-form {
+        padding-top: 66px;
+      }
+    }
+
+    /*END Footer*/
+
+
+    /*YASMINCSS*/
+
+    .imgEvent{
+      width:100%;
+      height:368px;
+    }
+
+    .eventContainer{ 
+      display:flex; 
+      flex-direction: row ;
+      width: 81.3%;
+      height:11.5%;
+      margin: 0px auto;
+    }
+
+    .eventItem{
+      line-height:0em;
+      position: relative;
+      flex: 1 1 auto;
+      margin: auto;
+      width:20.3%;
+      height:100%;
+      transition: width 0.3s linear;
+    }
+
+    .eventItem:hover{
+      width: 40.5%;
+    }
+
+    .layer{
+      position: relative;
+      background-image: url('../images/100.jpg');
+      background-position: center;
+      background-size: cover;
+      width:100%;
+      height:368px;
+    }
+
+    .orange{
+      background-color:rgba(235,115,0,0.6);
+      position: absolute;
+      top: 0px; 
+      right: 0px; 
+      width:100%; 
+      height: 100%;
+    }
+
+    .layerPur{
+      position: relative;
+      background-image: url('../images/100.jpg');
+      background-position: center;
+      background-size: cover;
+      width:100%;
+      height:368px;
+    }
+
+    .pur{
+      background-color:rgba(130,15,95,0.6);
+      position: absolute;
+      top: 0px; 
+      right: 0px; 
+      width:100%; 
+      height: 100%;
+    }
+
+    .layerPink{
+      position: relative;
+      background: rgba(40,40,124,0.6);
+      background-image: url('../images/100.jpg');
+      background-position: center;
+      background-size: cover;
+      width:100%;
+      height:368px;
+    }
+
+    .pink{
+      background-color:rgba(40,40,124,0.6);
+      position: relative;
+      top: 0px; 
+      right: 0px; 
+      width:100%; 
+      height: 100%;
+    }
+
+    * {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+
+    .divBlue {
+      width: 55px;
+      position: absolute;
+      display: inline-block;
+      height: 62px;
+      background-color: #1e1350;
+      color: white;
+      font-size: 17px;
+      text-align: center;
+      padding-top: 14px;
+      top: -37px;
+      right: 18px;
+    }
+
+
+    .divSoldRED {
+      width: 59px;
+      position: absolute;
+      display: inline-block;
+      height: 25px;
+      background-color: #d10000;
+      color: white;
+      font-size: 12px;
+      text-align: center;
+      padding-top: 3px;
+      top: 14px;
+      right: 0px;
+    }
+
+    .divRentGreen {
+      width: 59px;
+      position: absolute;
+      display: inline-block;
+      height: 25px;
+      background-color: #00a60e;
+      color: white;
+      font-size: 12px;
+      text-align: center;
+      padding-top:3px;
+      top: 14px;
+      right: 0px;
+    }
+
+    .allProducts.btn{
+      width: 206px;
+      height: 42px;
+      color: white;
+      top: 22%;
+      background-color:#e60046; 
+      margin-bottom: 5%;
+      margin-top: 2%;
+    }
+
+    .fav{
+      position: absolute;
+      left:10px; 
+      top: 20px;
+      color: white;
+    }
+
+    .left.col-md-3{
+      padding-right: 11px ;
+      padding-bottom:11px;
+      padding-left: 0px ;
+      border: 0px solid red;
+    }
+
+    .left.col-sm-6{
+     padding-right:11px ;
+     padding-bottom:11px;
+     padding-left: 0px ;
+     border: 0px solid red;
+    }
+
+    #products.container{
+      margin: 0px auto ;
+      position: relative;
+      width: 81.3%;
+      padding-top: 300px;
+      padding-right:0px;
+      padding-left:0px;
+    }
+
+    .fav .fa-heart,
+    .fav:hover .fa-heart-o {
+      display: none;
+    }
+
+    .fav:hover .fa-heart {
+      display: inline;
+    }
+
+    .prod.caption {
+     padding: 11px 27px 27px 12px;
+     position: relative;
+     color: #1e1350;
+    }
+
+    .event.thumbnail{
+      padding: 0px;
+      margin-right: 0px; 
+      margin-left: 0px; 
+      margin-bottom: 0px;
+      position: relative;
+    }
+
+    h2.header{
+      margin-bottom: 30px;
+      margin-top: 50px;
+      color: #1e1350;
+      font-weight: bold;
+    }
+
+    .categName{
+      font-size: 10px;
+      line-height: 12px;
+      width: 74px;
+      height: 14px;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+
+    .prodName{
+      font-size: 19px; 
+      font-weight: bold;
+      height:22px;
+      width: 150px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      line-height: 22px;
+    }
+
+    .perProdDetails{
+      width: 208px;
+      height: 43px;
+      font-size: 14px;
+      line-height: 16px;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      padding-right: 20px;
+      padding-top: 9px;
+    }
+
+    .eventtag1{
+      bottom: 105px;
+      top: 222px;
+      left:17px; 
+      font-size: 20px;
+      color: white; 
+      position: absolute;
+      height: 24px;
+      line-height:22px; 
+      overflow:hidden;
+      text-overflow:ellipsis; 
+      width: 122px;
+    }
+
+    .eventtag2{
+     font-size: 26px; 
+     color: white;
+     position: absolute;
+     bottom: 37px;
+     height:63px;
+     width: 203px;
+     top: 257px;
+     overflow: hidden;
+     text-overflow: ellipsis;
+     line-height: 31px; 
+     left: 17px;
+    }
+
+    #heading{
+      color: #1e1350;
+      margin-bottom: 35px;
+      margin-top:54px;
+      font-weight: bold;
+    }
+
+    .centering {
+      width:85%;
+      margin: auto;
+    }
+
+    #myCarousel{
+     display: none;
+    }
+
+    @media screen and (max-width: 500px){
+      header.carousel .item.yasmin,
+      header.carousel .item.active.yasmin,
+      header.carousel .carousel-inner {
+        height: 80%;
+      }
+
+      .carousel-caption {
+        bottom:210px;
+      }
+
+      #allProductsButton{
+        position: relative;
+        top: -124px;
+      }
+
+      #products.container{
+        padding-top: 0px;
+        top: -152px;
+      }
+
+      .eventContainer{
+        display: none;
+      }
+
+      .layer, .layerPink, .layerPur{
+        width: 100%;
+        height: 80%;
+      }
+
+      #myCarousel{
+        display: inline;
+      }
+
+      .centering {
+        width:85%;
+        margin: auto;
+      }
+      .noName{
+        position: relative;
+        top: -76px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container centered">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+        <img src="../images/shoppingcart.png" style="float: left; padding-left: 0; margin-right:7px;" height="40">
+        <a class="navbar-brand" href="homepage.html" style="color: #FEF9F6;">Massry</a>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="about.html" data-toggle="modal" data-target="#LogIn" style="color: #FFFFFF">Log in</a>
+          </li>
+          <li>
+            <a href="Register.html" style="color: #FFFFFF">Register</a>
+          </li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+  </nav>
+
+  <!-- JUMBOTRON -->
+
+  <div class="jumbotron text-center">
+    <div class="container centered">
+      <h1 style="color:#FFFFFF;">Welcome to Massry</h1>
+      <br>
+      <p style="color:#FFFFFF;">We have millions of one-of-a-kind items, so you can find whatever you want as you can buy directly from someone who put their heart and soul into making something special.</p>
+
+        <!-- SEARCH -->
+
+        <div class="row mariam">
+          <div class="transparent">
+            <form class="search-box">
+              <div class="col-lg-5 col-md-4 col-xs-12 search-text" >
+                <input type="text" class="form-control search-input no-radius" placeholder="Search">
+              </div>
+
+
+              <div class="col-md-2 col-xs-12 search-inner">
+               <select name="categories" class="btn btn-default form-control search-input search-select-left no-radius" style="min-width: 140px;">
+                <option selected style="color: #9097b2" value="category">All categories</option>
+                <option value="Accessories">Accessories</option>
+                <option value="Art">Art</option>
+                <option value="Clothing">Clothing</option>
+                <option value="HomeDecorations">Home & Decor</option>
+              </select>
+
+            </div>
+
+            <div class="col-md-2 col-xs-12 search-inner">
+             <select name="multiple" class="btn btn-default form-control search-input search-select-right no-radius" style="min-width: 140px">
+              <option selected style="color: #9097b2" value="Search by">Search by</option>
+              <option value="BestSeller">Best Seller</option>
+              <option value="Discount">Discount</option>
+              <option value="NewArrivals">New Arrivals</option>
+            </select>
+
+          </div>
+
+          <div>
+            <button href="" type="submit" name="x" class="btn search_btn no-radius">Search</button>
+          </div>
+        </form>
+      </div> 
+    </div>
+
+    <!-- END SEARCH -->
+
+  </div>
+</div>
+
+<!-- END JUMBOTRON -->
+
+
+<!-- UPCOMING EVENTS -->
+
+<div class="centering">
+  <h2 id="heading"><strong>Upcomming events</strong></h2>
+</div>
+
+<div class="eventContainer">
+  <div class="eventItem">
+    <div class="layer">
+      <div class="orange">
+
+      </div>
+    </div> 
+
+    <div class="eventtag1">yasminwws was here yahh uausau shdsu yahsab jnsjd sds
+    </div>
+    
+    <div class="eventtag2">yasmiadn jshds jdsdsdsdsdsdsdsdsds jsjdjssdssdsssssss jjisjdissds sdisjiddddsssss ijdsisj yasnsuhd usdu </div> 
+    
+    <!-- <img class="imgEvent" src="../images/100.jpg"/>     -->
+  </div>
+  <div class="eventItem">
+    <div class="layerPur">
+      <div class="pur">
+
+      </div>
+    </div>
+    <div class="eventtag1">yasmin was here
+
+    </div>
+
+    <div class="eventtag2">yasmiadn jshds jdsdsdsdsdsdsdsdsds jsjdjssdssdsssssss jjisjdissds sdisjiddddsssss ijdsisj yasnsuhd usdu </div> 
+
+<!--      <img class="imgEvent" src="../images/100.jpg"/>
+-->    </div>
+<div class="eventItem">
+
+ <div class="layerPink">
+  <div  class="pink"></div>
+</div> 
+
+<div class="eventtag1">yasminwws was here yahh uausau shdsu yahsab jnsjd sds
+</div>
+
+<div class="eventtag2">yasmiadn jshds jdsdsdsdsdsdsdsdsds jsjdjssdssdsssssss jjisjdissds sdisjiddddsssss ijdsisj yasnsuhd usdu </div> 
+
+</div>
+</div>
+
+<header id="myCarousel" class="carousel slide centering">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item  yasmin active">
+      <div class="layer" style="background-image:url('../images/100.jpg');">
+
+        <div class="pink"> </div></div>
+        <div class="carousel-caption">
+          <h2>Event name</h2>
+        </div>
+      </div>
+
+      <div class="item yasmin">
+       <div class=" layer" style="background-image:url('../images/100.jpg');">
+
+        <div class="orange"> </div></div>
+        <div class="carousel-caption">
+          <h2>Event name</h2>
+        </div>
+      </div>
+      <div class="item yasmin">
+        <div class=" layer" style="background-image:url('../images/100.jpg');">
+
+          <div class="pur"> </div></div>
+          <div class="carousel-caption">
+            <h2>Event name</h2>
+          </div>
+        </div>
+      </div>
+
+    </header>
+
+    <!-- END UPCOMING EVENTS -->
+
+    <div style="height: 20px;"></div>
+
+    <!-- BEST SELLERS -->
+
+    <div id="products" class="container"  >
+
+
+      <h2 class="header">Best Sellers</h2>
+
+      <div class="row"  style=" margin:0px auto; position: relative;">
+
+        <div  class="col-md-3 col-sm-6 left" > 
+          <div class="thumbnail event">
+
+
+            <div  class="fav">
+              <i class="fa fa-heart-o fa-lg"></i>
+              <i class="fa fa-heart fa-lg"></i>
+            </div>  
+            <img src="../images/100.jpg" alt="Lights "  class="img-responsive" >
+
+            <div class="caption prod" >
+              <div class="divBlue"> 11 </div>
+              <div class="categName">
+                category name 
+              </div>
+              <div class="prodName">
+                product name here
+              </div>
+
+              <div class="perProdDetails">
+                product short description
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div  class="col-md-3 col-sm-6 left">
+          <div class="thumbnail event" >
+
+
+            <div  class="fav">
+              <i class="fa fa-heart-o fa-lg"></i>
+              <i class="fa fa-heart fa-lg"></i>
+            </div>  
+            <img src="../images/100.jpg" alt="Lights "  class="img-responsive" >
+
+            <div class="caption prod" >
+              <div class="divBlue"> 11 </div>
+              <div class="categName">
+                category name 
+              </div>
+              <div class="prodName">
+                product name here
+              </div>
+
+              <div class="perProdDetails">
+                product short description
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div  class="col-md-3 col-sm-6 left"> 
+          <div class="thumbnail event" >
+
+
+            <div  class="fav">
+              <i class="fa fa-heart-o fa-lg"></i>
+              <i class="fa fa-heart fa-lg"></i>
+            </div>  
+            <img src="../images/100.jpg" alt="Lights "  class="img-responsive" >
+
+            <div class="caption prod" >
+              <div class="divBlue"> 11 </div>
+              <div class="categName">
+                category name 
+              </div>
+              <div class="prodName">
+                product name here
+              </div>
+
+              <div class="perProdDetails">
+                product short description
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div  class="col-md-3 col-sm-6 left"> 
+          <div class="thumbnail event">
+            <div  class="fav">
+              <i class="fa fa-heart-o fa-lg"></i>
+              <i class="fa fa-heart fa-lg"></i>
+            </div> 
+
+            <img src="../images/100.jpg" alt="Lights "  class="img-responsive" >
+
+            <div class="caption prod">
+              <div class="divBlue"> 11 </div>
+              <div class="categName">
+                category name 
+              </div>
+              <div class="prodName">
+                product name here uasy hbssb hsbxhsb hsxbhsbx hbsxhsx
+              </div>
+
+              <div class="perProdDetails">
+                product short description sjxnsjnxj xjsnxjnsjxn nxsjx jsxnjs jjj jnj jnxjnsx 
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- END BEST SELLLERS -->
+
+      <!-- NEWEST PRODUCTS -->
+
+      <div class="w-100"></div>
+
+      <h2 class="header" >Newest products</h2>
+
+      <div class="row"  style=" margin:0px auto;">
+       <div  class="col-md-3 col-sm-6 left">
+
+        <div class="thumbnail event" >
+          <div class="divSoldRED">sold</div>
+          <div  class="fav">
+            <i class="fa fa-heart-o fa-lg"></i>
+            <i class="fa fa-heart fa-lg"></i>
+          </div> 
+
+          <img src="../images/100.jpg" alt="Lights" class="img-responsive"   >
+          <div class="caption prod">
+            <div class="divBlue"> 11 </div>
+            <div class="categName">
+              category name 
+            </div>
+            <div class="prodName">
+              product name here 
+            </div>
+
+            <div class="perProdDetails">
+              product short description
+
+            </div>
+
+
+          </div>
+
+        </div>
+      </div>
+
+
+      <div  class="col-md-3 col-sm-6 left">
+
+        <div  class="thumbnail event" >
+
+          <div  class="fav">
+            <i class="fa fa-heart-o fa-lg"></i>
+            <i class="fa fa-heart fa-lg"></i>
+          </div> 
+
+          <img src="../images/100.jpg" alt="Lights" class="img-responsive" >
+          <div class="caption prod" >
+            <div class="divBlue"> 11 </div>
+            <div class="categName">
+              category name 
+            </div>
+            <div class="prodName">
+              product name here
+            </div>
+
+            <div class="perProdDetails">
+              product short description
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div  class=" col-md-3 col-sm-6 left">
+        <div class="thumbnail event" >
+          <div class="divRentGreen"> rent</div>
+
+          <div  class="fav">
+            <i class="fa fa-heart-o fa-lg"></i>
+            <i class="fa fa-heart fa-lg"></i>
+          </div>  
+          <img src="../images/100.jpg" alt="Lights" class="img-responsive" >
+
+          <div class="caption prod" >
+            <div class="divBlue"> 11 </div>
+            <div class="categName">
+              category name 
+            </div>
+            <div class="prodName">
+              product name here
+            </div>
+
+            <div class="perProdDetails">
+              product short description
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div  class="col-md-3 col-sm-6 left">
+
+        <div class="thumbnail event" >
+
+          <div  class="fav">
+            <i class="fa fa-heart-o fa-lg"></i>
+            <i class="fa fa-heart fa-lg"></i>
+          </div> 
+
+          <img src="../images/100.jpg" alt="Lights " class="img-responsive">
+          <div class="caption prod" >
+            <div class="divBlue"> 11 </div>
+            <div class="categName">
+              category name 
+            </div>
+            <div class="prodName">
+              product name here
+            </div>
+
+            <div class="perProdDetails">
+              product short description
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- END NEWEST PRODUCTS -->
+
+
+  <div class="text-center" id="allProductsButton">
+    <button type="button"  class="btn allProducts no-radius">All products</button>
+  </div>
+
+  <!-- CATEGORY BUTTONS -->
+
+  <div class="container centered noName">
+    <div class="row mariam">
+
+      <div class="col-sm-6 col-xs-12">
+        <div class="category-image pull-left">
+          <div type="hover" class="black">
+            <button type="submit" class="btn btn-block category_btn"> 
+              <text class="white-text pull-left">Accessories</text> 
+              <text class="white-text pull-right">11</text> 
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-xs-12">
+        <div class="category-image pull-right">
+          <div type="hover" class="black">
+            <button type="submit" class="btn btn-block category_btn"> 
+              <text class="white-text pull-left">Art</text>
+              <text class="white-text pull-right">11</text> 
+            </button>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-sm-6 col-xs-12">
+        <div class="category-image pull-left">
+          <div type="hover" class="black">
+            <button type="submit" class="btn btn-block category_btn"> 
+              <text class="white-text pull-left">Clothing</text>
+              <text class="white-text pull-right">11</text> 
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-xs-12">
+        <div class="category-image pull-right">
+          <div type="hover" class="black">
+            <button type="submit" class="btn btn-block category_btn"> 
+              <text class="white-text pull-left">Home & Decor</text> 
+              <text class="white-text pull-right">11</text> 
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- END CATEGORY BUTTONS -->
+
+
+
+  <!-- FOOTER -->
+
+  <footer>
+    <div class="footer">
+      <div class="container centered">
+        <div class="row mariam oldold">
+
+          <div class="col-lg-3 col-sm-3 col-xs-3">
+            <img src="../images/newlogo1.png" height="160" style="margin-bottom: 2%;">
+          </div>
+
+          <div class="col-lg-7 col-md-7 col-sm-7 col-xs-7">
+            <div class="footer-form">
+              <label  class="label-footer">Join now to get the latest offers</label>
+
+              <div class="row mariam old">
+                <div class=" col-lg-8 col-md-8 col-sm-8 col-xs-10">
+                  <input type="text" class="form-control no-radius footer-text" placeholder="Enter your e-mail">
+                </div>
+                <div class="col-lg-3 col-md-2 col-sm-2 col-xs-12">
+                  <button type="submit" name="x" class="btn btn-default join_btn no-radius" name="x">Join now</button>
+                </div>
+                <div class="col-lg-1 col-md-2 col-sm-2 "></div>
+              </div>
+
+              <div class="row mariam new">
+                <div class="col-xs-10">
+                  <input type="text" class="form-control no-radius footer-text" placeholder="Enter your e-mail">
+                </div>
+                <div class="col-xs-2 "></div>
+
+
+                <div class="col-xs-10">
+                  <button type="submit" name="x" class="btn btn-default join_btn no-radius" name="x">Join now</button>
+                </div>
+                <div class="col-xs-2 "></div>
+
+              </div>
+
+
+            </div>
+          </div>
+
+          <div class="col-sm-2 col-xs-2">
+            <div class="pull-right">
+              <div>
+                <i class="fa fa-twitter fa-2x pull-right" aria-hidden="true" style="margin-left:15%; margin-top: 40%;"></i>
+                <i class="fa fa-facebook fa-2x pull-right" aria-hidden="true" style="margin-top: 40%;"></i>
+              </div>
+              <ul style="list-style: none; margin-top: 26%; overflow: auto;" class="pull-right">
+                <li><a href="#" data-toggle="modal" data-target="#ContactUs" style="color: #FFFFFF; padding-bottom: 5px;white-space: nowrap;" class="pull-right">Contact us</a></li>
+                <li><a href="#" style="color: #FFFFFF" class="pull-right">Policies</a></li>
+              </ul>
+            </div> 
+          </div>
+
+        </div>
+
+
+
+        <div class="row mariam newnew">
+          <div class="col-xs-6">
+            <img src="../images/newlogo1.png" height="140" style="margin-top: -2%; margin-left: -10%;">
+          </div>
+
+          <div class="col-xs-6">
+            <div class="pull-right">
+              <div>
+                <i class="fa fa-twitter fa-2x pull-right" aria-hidden="true" style="margin-left:15%; margin-top: 30%;"></i>
+                <i class="fa fa-facebook fa-2x pull-right" aria-hidden="true" style="margin-top: 30%;"></i>
+              </div>
+              <ul style="list-style: none; margin-top: 26%; overflow: auto;" class="pull-right">
+                <li><a href="#" data-toggle="modal" data-target="#ContactUs" style="color: #FFFFFF; padding-bottom: 5px;white-space: nowrap;" class="pull-right">Contact us</a></li>
+                <li><a href="#" style="color: #FFFFFF" class="pull-right">Policies</a></li>
+              </ul>
+            </div> 
+          </div>
+
+          <div class="col-xs-12">
+            <div class="footer-form">
+              <label  class="label-footer">Join now to get the latest offers</label>
+              <div class="row mariam">
+                <div class="col-xs-8">
+                  <input type="text" class="form-control no-radius footer-text" placeholder="Enter your e-mail">
+                </div>
+                <div class="col-xs-4">
+                  <button type="submit" name="x" class="btn btn-default join_btn no-radius" name="x" >Join now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+      </div>
+    </div>
+  </footer>
+
+  <!-- END FOOTER -->
+
+
+  <!-- LOG IN MODAL -->
+
+  <div class="modal fade" id="LogIn" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+          <h3 class="modal-title" id="lineModalLabel"> <strong> Log in to your account</strong></h3>
+        </div>
+
+        <div class="modal-body">
+          <form class="popup-form">
+
+            <div class="form-group">
+              <label name="x">Email Address</label>
+
+              <input type="email" class="form-control" style="background-color: #ececed; border:0; height: 45px;">
+            </div>
+
+            <div class="form-group">
+              <label name="x">Password</label>
+              <input type="password" class="form-control" style="background-color: #ececed; border:0; height: 45px;">
+            </div>
+
+            <label>Don't have an account? </label><a href="Register.html" style="color: #1f87e6"> Create one now</a>
+
+            <button name="xx" type="submit" class="btn btn-default center-block popup-btn">Log in</button>
+
+          </form>
+        </div >
+
+        <div class="modal-footer">
+          <div class="modal-footer-text">
+            <h4><span>Or you can log in</span></h4>
+          </div>
+          <div class="container-fluid text-center">
+
+            <div class="row mariam">
+              <div class="col-sm-6 col-xs-12">
+                <button name="tw" type="submit" class="btn btn-default twitter-btn"><i class="fa fa-twitter fa-2" aria-hidden="true"></i>   with twitter</button>
+              </div>
+              <div class="col-sm-6 col-xs-12">
+                <button name="fb" type="submit" class="btn btn-default fb-btn"> <i class="fa fa-facebook fa-2" aria-hidden="true"></i>   with facebook</button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- END LOG IN MODAL -->
+
+  <!-- CONTACT US MODAL -->
+
+  <div class="modal fade" id="ContactUs" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-md">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+          <h3 class="modal-title" id="lineModalLabel"><strong>Contact us</strong></h3>
+        </div>
+
+        <div class="modal-body">
+          <form class="popup-form">
+            <div class="form-group">
+              <label name="x">Name</label>
+              <input type="text" class="form-control" style="background-color: #ececed; border:0; height: 45px;">
+            </div>
+
+            <div class="form-group">
+              <label name="x">Email Address</label>
+              <input type="email" class="form-control" style="background-color: #ececed; border:0; height: 45px;">
+            </div>
+
+            <div class="form-group">
+              <label name="x">Subject</label>
+              <input type="text" class="form-control" style="background-color: #ececed; border:0; height: 45px;">
+            </div>
+
+            <div class="form-group">
+              <label name="x">Message</label>
+              <textarea class="form-control" rows="5" style="background-color: #ececed; border:0;"></textarea>
+
+            </div>
+            <center>
+              <button type="submit" name="xx" class="btn popup-btn">Send message</button>
+            </center>
+          </form>
+        </div >
+
+      </div>
+    </div>
+  </div>
+
+  <!-- END CONTACT US MODAL -->
+
+  <!-- jQuery -->
+  <script src="../js/jquery.js"></script>
+
+  <!-- Bootstrap Core JavaScript -->
+  <script src="../js/bootstrap.min.js"></script>
+
+  <!-- Script to Activate the Carousel -->
+  <script>
+    $('.carousel').carousel({
+        interval: 4000 //changes the speed
+      })
+    </script>
+
+  </body>
+</html>

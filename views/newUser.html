@@ -1,0 +1,1568 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<title>Full Width Pics - Start Bootstrap Template</title>
+
+	<!-- Bootstrap Core CSS -->
+	<link href="../css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Custom CSS -->
+	<link href="../css/full-width-pics.css" rel="stylesheet">
+
+	<link href="../font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+	<link href='https://fonts.googleapis.com/css?family=Galindo' rel='stylesheet'>
+
+
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.../js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <style type="text/css">
+
+        	@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+        	*{
+        		font-family: 'Open Sans', sans-serif;
+        	}
+
+        	.extra-space {
+        		margin-bottom: 2%;
+        	}
+/*.inputs {
+  width: 100%;
+}
+*/
+.shop-btn {
+	margin-top: 1.5%;
+	/*margin-left: 20%;*/
+	width: 60%;
+	min-width:200px;
+	background-color: #e60046;
+	color: #FFFFFF;
+}
+
+
+.name {
+	width:100%;
+	margin:0 auto;
+
+}
+
+.profile-info {
+	width:90%;
+	margin:0 auto;
+}
+
+.save-btn {
+	background: linear-gradient(to right, #0e0a34 0%, #e60046 100%); 
+	color: #FFFFFF; 
+	height: 50px; 
+	min-width: 200px; 
+	font-size:16px; 
+	margin-top: 20px; 
+	margin-bottom: 10px;
+	margin-right: 1.5%;
+	border: 0;
+}
+
+
+button[name="x"]:hover, a[name="x"]:hover {
+	color: #FFFFFF;
+	background-color: #e60046;
+
+}
+
+
+button[name="x"]:focus, a[name="x"]:focus{
+	color: #FFFFFF;
+	background-color: #e60046;
+
+}
+
+button:active, a:active {
+	color: #FFFFFF;
+}
+
+
+.centered {
+	padding-left: 0;
+	padding-right: 0;
+	width:85%;
+	margin: 0px auto;
+}
+
+.row.mariam > [class*='col-'] {
+	padding-right:0;
+	padding-left:0;
+}
+
+/*NavBar*/
+
+.navbar-brand {
+	font-family: 'Galindo';
+	font-size: 27px;
+	padding-left: 0;
+	font-weight: lighter;
+}
+
+.navbar {
+	border: 0;
+	margin-bottom: 0;
+	padding-top: 0.5%;
+	padding-bottom: 0.5%;
+	border-radius: 0;
+	background: #8e0247;
+}
+
+.no-radius {
+	border-radius: 0;
+}
+
+.cover-photo {
+	position: relative;
+	background-image: url('../images/100.jpg');
+	background-position: center;
+	background-size: cover;
+	height: 350px;
+	z-index: 0;
+	margin-bottom: 2%;
+
+}
+
+.transparent-layer {
+	background-color:rgba(130,17,94,0.7);
+	position: absolute;
+	top: 0px; 
+	right: 0px; 
+	width:100%; 
+	height: 350px;
+	z-index: 0;
+}
+
+.profile-photo {  
+	position: relative; 
+	margin: -45% 0px 0px 0px;
+	margin-bottom: 5%;
+	z-index: 9;
+	width: 70%;
+	margin-left: 15%;
+}
+
+/*END NavBar*/
+
+
+/*Footer*/
+
+div .row.mariam.newnew {
+	display: none;
+}
+
+div .row.mariam.new {
+	display: none;
+}
+
+footer{
+	margin-top:3%;
+	margin-bottom:0;
+
+}
+
+footer-icons {
+	margin-top: 4%;
+}
+
+.fa-2x{
+	font-size:1.8em;
+}
+
+.footer {
+	margin: 3% 0 0 0 0;
+	height: 10%;
+	width: 100%;
+	color: #FFFFFF;
+	background-color: #0a061a;
+}
+
+.join_btn {
+
+	width:100%;
+	height: 42px;
+	background-color: #e60046;
+	color: #ffffff;
+	white-space: normal;
+	border:0;
+}
+
+.footer-text {
+	min-width: 40px; 
+	height: 42px; 
+	margin-right: 5px;
+}
+
+.footer-text {
+	width:98%;  
+}
+
+.footer-form {
+	/*padding-left: -1%;*/
+	padding-top: 66px;
+}
+
+.label-footer {
+	padding-bottom: 5px; margin-left: -11px;
+}
+
+@media screen and (max-width: 502px){
+	div .row.mariam.newnew {
+		display: inline;
+	}
+
+	div .row.mariam.oldold {
+		display: none;
+	}
+
+
+	.fa-2x{
+		font-size:1.8em;
+	}
+
+	.join_btn {
+		width: 100% ;  
+	}
+
+	.footer-text {
+		width:98%; 
+
+	}
+
+	.footer-form {
+		/*margin-left:  4%;*/
+		padding-top: 0px;
+	}
+}
+
+@media screen and (min-width: 502px) and (max-width: 769px){
+	div .row.mariam.old{
+		display: none;
+	}
+	div .row.mariam.new{
+		display: inline;
+	}
+
+	.fa-2x{
+		font-size:1.6em;
+	}
+
+	.join_btn {
+		min-width: 150px ;
+		margin-top: 5px;
+
+	}
+
+	.footer-text {
+		width:100%;  
+	}
+
+	.label-footer {
+		margin-left: 2px;
+	}
+
+	.footer-form {
+		margin-left:  4%;
+		padding-top: 40px;
+	}
+}
+
+@media screen and (min-width: 769px) and (max-width: 935px){
+	.fa-2x{
+		font-size:1.6em;
+	}
+	.join_btn {
+		min-width: 150px ;
+		/*width: 8%;*/  
+	}
+
+	.footer-text {
+		width:98%;  
+	}
+
+	.footer-form {
+		/*padding-left: -1%;*/
+		padding-top: 66px;
+	}
+}
+
+/*END Footer*/
+
+h4 {
+	color: #1e1350;
+}
+
+div.row.small {
+	display: none;
+}
+
+/*MEDIA QUERIES*/
+
+@media screen and (max-width: 450px){
+	label[name="x"] {
+		margin-bottom: 10px;
+		font-size: 130%;
+	}
+
+
+	.shop-btn{
+		font-size: 130%;
+	}
+
+	.save-btn {
+		min-width:130px;
+		font-size: 130%;  
+		margin-top: 20px; 
+		margin-bottom: 10px;
+	}
+
+	.cover-photo,.transparent-layer {
+		height: 200px;
+	}
+	.shop-btn {
+		min-width:150px;
+		font-size: 110%; 
+	}
+	.profile-photo {
+		width: 55%;
+		margin-left: 22.5%;
+	}
+	div.row.small {
+		display: inline;
+	}div.row.large {
+		display: none;
+	}
+
+
+
+}
+
+@media screen and (min-width: 450px) and (max-width: 530px){
+	.profile-photo {
+		width: 55%;
+		margin-left: 22.5%;
+	}
+	label[name="x"] {
+		margin-bottom: 10px;
+		font-size: 130%;
+	}
+
+	.shop-btn {
+		font-size: 130%;
+	}
+
+	.save-btn {
+		margin-right: 4%;
+		min-width:150px;
+		font-size: 130%; 
+	}
+
+	.cover-photo {
+		height: 200px;
+	}
+
+	.transparent-layer {
+		height: 200px;
+	}
+	div.row.small {
+		display: inline;
+	}div.row.large {
+		display: none;
+	}
+
+
+}
+@media screen and (min-width: 530px) and (max-width: 643px){
+	.profile-photo {
+		width: 45%;
+		margin-left: 27.5%;
+	}
+	label[name="x"] {
+		margin-bottom: 10px;
+		font-size: 130%;
+	}
+
+	.shop-btn {
+		font-size: 130%;
+	}
+
+	.save-btn {
+		margin-right: 4%;
+		min-width:150px;
+		font-size: 130%; 
+	}
+
+	.cover-photo {
+		height: 200px;
+	}
+
+	.transparent-layer {
+		height: 200px;
+	}
+	div.row.small {
+		display: inline;
+	}div.row.large {
+		display: none;
+	}
+
+
+}
+
+
+@media screen and (min-width: 643px) and (max-width: 815px){
+	div.row.small {
+		display: inline;
+	}div.row.large {
+		display: none;
+	}
+	label[name="x"] {
+		margin-bottom: 10px;
+		font-size: 140%;
+	}
+
+	.shop-btn {
+		font-size: 130%;
+	}
+
+	.profile-photo {
+		width:40%;
+		margin-left: 30%;
+		margin-top: -25%;
+		margin-bottom: 0;
+	}
+
+	.save-btn {
+		margin-right: 4%;
+	}
+
+	.save-btn {
+		/*min-width:150px;*/
+		font-size: 130%; 
+	}
+	.cover-photo {
+		height: 180px;
+	}
+
+	.transparent-layer {
+		height: 180px;
+	}
+
+}
+
+@media screen and (min-width: 815px) and (max-width: 927px){
+
+	.save-btn {
+		margin-right: 4%;
+	}
+
+	.shop-btn {
+		/*min-width:145px;*/
+		font-size: 115%; 
+	}
+
+	.save-btn {
+		/*min-width:150px;*/
+		font-size: 120%; 
+	}
+	.cover-photo {
+		height: 180px;
+	}
+
+	.transparent-layer {
+		height: 180px;
+	}
+
+}
+
+
+@media screen and (min-width: 927px)  and (max-width: 1050px){
+	.cover-photo {
+		height: 200px;
+	}
+	.shop-btn {
+		/*min-width:145px;*/
+		font-size: 120%; 
+	}
+
+	.save-btn {
+		min-width:180px;
+		font-size: 110%; 
+	}
+
+	.transparent-layer {
+		height: 200px;
+	}        
+}
+
+/*Modal*/
+
+label[name="x"] {
+	margin-bottom: 10px;
+	/*font-size: 140%;*/
+}
+
+.modal-content{
+	border-radius: 0; 
+}
+.modal-header {
+	padding-bottom: 5px;
+}
+
+textarea {
+	resize:none;
+}
+
+.modal-header .close {
+	padding-top:5px;
+	padding-right: 2px;
+}
+
+.modal-footer {
+	padding: 0;
+}
+
+.modal-footer .btn-group {
+	height:40px;
+	border-top-left-radius : 0;
+	border-top-right-radius : 0;
+	border: none;
+	border-right: 1px solid #ddd;
+}
+
+.modal-footer .btn-group:last-child > button {
+	border-right: 0;
+}
+
+body.modal-open {
+	padding-right: 0 !important;
+	overflow: inherit;
+}
+body.modal-open, .modal-open .navbar-fixed-top, .modal-open .navbar-fixed-bottom { margin-right: 0; }
+
+button[name="xx"]:hover {
+	background: linear-gradient(to right, #0e0a34 0%, #e60046 100%); 
+	color: #FFFFFF; 
+}
+
+button:active {
+	color: #FFFFFF;
+}
+
+button[name="xx"]:focus {
+	background: linear-gradient(to right, #0e0a34 0%, #e60046 100%); 
+	color: #FFFFFF; 
+}
+
+.popup-btn {
+	background: linear-gradient(to right, #0e0a34 0%, #e60046 100%); 
+	color: #FFFFFF; 
+	height: 50px; 
+	width: 200px; 
+	font-size:16px; 
+	margin-top: 20px; 
+	margin-bottom: 10px;
+	border:0;
+}
+
+.popup-form{
+	margin: 0 auto;
+}
+
+.fa-2{
+	font-size:1.6em;
+}
+
+.modal-header{
+	border-bottom: 2px solid #ececed;
+}
+
+.modal-title {
+	font-weight: bold;
+	font-size: 25px;
+}
+
+.modal-footer{
+	border-top: none;
+}
+
+.modal-footer-text{
+	width: 90%;
+	margin: 0 auto;
+}
+
+@media only screen and (max-width : 768px) {
+
+	.twitter-btn {
+		/*margin: 0;*/
+		margin: 2%;
+		width: 210px;
+	}
+	.fb-btn {
+		width: 210px;
+		margin-bottom: 3%;
+		margin: 2%;
+
+	}
+
+	.modal-dialog {
+		width: 500px;
+		margin: 30px auto;
+	}
+
+
+}
+
+@media only screen and (width: 768px){
+	.fb-btn{
+		margin-bottom: 20px;
+		margin-right:40px; 
+		width: 173px; 
+		margin-top: 20px
+	}
+
+	.twitter-btn {
+		margin-bottom: 20px;
+		margin-left: 40px;
+		width: 173px; 
+		margin-top: 20px;
+	}
+}
+
+@media screen and (max-width: 600px){
+	.modal-dialog {
+		width: 450px;
+		margin: 30px auto;
+	}
+}
+
+@media (max-width: 520px){
+	.modal-dialog {
+		width: 400px;
+		margin: 30px auto;
+	}
+}
+
+
+@media (max-width: 500px){
+	.modal-dialog {
+		width: 380px;
+		margin: 30px auto;
+	}
+}
+
+@media (max-width: 450px){
+	.modal-dialog {
+		width: 350px;
+		margin: 30px auto;
+	}
+}
+
+@media (max-width: 400px){
+	.modal-dialog {
+		width: 90%;
+		margin: 30px auto;
+	}
+	.popup-btn {
+		width: 60%; 
+		font-size:16px; 
+		margin: auto;
+	}
+}
+
+/*END Modal*/
+
+
+/*Upload Button*/
+
+.upload-btn::-webkit-file-upload-button {
+	visibility: hidden;
+}
+
+.upload-btn::before {
+	content: "Choose file";
+	color: #FFFFFF;
+	display: inline-block;
+	border: 0;
+	background-color: #e60046;
+	border-radius: 4px;
+	padding: 2px 6px;
+	outline: none;
+	white-space: nowrap;
+	-webkit-user-select: none;
+	cursor: pointer;
+}
+
+.upload-btn:active::before {
+	background-color: #e60046;
+}
+
+/*END Upload Button*/
+
+
+ul#menu li
+{
+	margin-left:-10%  ;
+
+}
+
+ul#menu li a, ul .update
+{
+
+	font-weight: bold;
+	text-decoration: none;}
+
+
+	a[name= "hover"]:hover {
+		background-color:rgba(230, 0, 70,0.5);
+		width:100%; 
+		height: 100%;
+	}
+
+	.list-group-item.active, .list-group-item.active:hover,
+	.list-group-item.active:focus{
+		background-color:rgba(230, 0, 70,0.5);
+		border-color:rgba(230, 0, 70,0.5);
+		color: rgba(230, 0, 70,0.5);
+		/*background-color: #fff;*/
+
+ /*  	a.list-group-item.active {
+      width:100%; 
+      height: 100%;
+      border-color: ;
+
+  }*/
+
+</style>
+</head>
+
+<body>
+
+	<!-- Navigation -->
+	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+		<div class="container centered">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+
+				<img src="../images/shoppingcart.png" style="float: left; padding-left: 0; margin-right:7px;" class="img" height="40">
+				<a class="navbar-brand" href="homepage.html" style="color: #FEF9F6;">Massry</a>
+			</div>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav navbar-right">
+					<li>
+						<a href="about.html" data-toggle="modal" data-target="#LogIn" style="color: #FFFFFF">Log out</a>
+					</li>
+					
+				</ul>
+			</div>
+			<!-- /.navbar-collapse -->
+		</div>
+		<!-- /.container -->
+	</nav>
+
+
+
+	<!-- COVER IMAGE -->
+	<div class="cover-photo">
+		<!-- <img align="left" src="../../images/100.jpg" class="cover-photo"> -->
+		<div class="transparent-layer"> </div>
+	</div>
+
+
+	<!-- Page Content -->
+	<div class="container centered">
+		<div class="row large">
+
+			<div class="col-lg-3 col-md-4 col-sm-4 col-xs-4" >
+				<div style="margin: 0 auto;">
+					<img align="left" class="profile-photo thumbnail center-block" src="../images/no-image.png"/>
+
+					<h2 class="" style="text-align: center; color: #1e1350; font-weight: bold; margin-bottom: 5%;">Mariam Mostafa</h2>
+
+					<center>   
+						<ul style="list-style:none; margin-left: -15%;" class="text update">
+							<li><a href="#" data-toggle="modal" class="update" data-target="#UpdatePP" style="color: #1f87e6; font-weight: bold;"> <i class="fa fa-pencil update" aria-hidden="true" style=""></i> Update your photo</a></li>
+							<li><a href="#" data-toggle="modal" class="update" data-target="#ResetPassword" style="color: #1f87e6; font-weight: bold;"> <i class="fa fa-pencil update" aria-hidden="true"></i> Reset password</a></li>
+						</ul>
+
+						<div class="list-group">
+							<a  name="hover" class="list-group-item active" style="color: #1e1350; font-weight: bold;" onclick="showPageElement('edit');">Edit personal info</a>
+							<a name="hover" style="color: #1e1350; font-weight: bold;" class="list-group-item" onclick="showPageElement('subscriptions');">Subscriptions</a>
+						</div>
+
+						<a href="createShop.html" class="btn btn-lg shop-btn" name="x"> 
+							<i class="fa fa-briefcase" aria-hidden="true"></i> Create your shop</a>
+
+						</center> 
+					</div>
+				</div>
+				<!-- /.col-lg-3 -->
+
+				<div class="col-lg-9 col-md-8 col-sm-8 col-xs-8">
+
+					<div class="profile-info" id="edit">
+						<h3 style="color: #1e1350; font-weight: bold; margin-bottom: 5%;">Edit personal info</h3>
+
+						<div class="form-group extra-space">
+							<label name="x" class="col-lg-2 col-md-2 col-sm-3 col-xs-4 extra-space" style="color: #1e1350;">First name</label>
+							<div class="col-lg-10 col-md-10 col-sm-9 col-xs-8">
+								<input type="text" class="form-control extra-space" style="background-color: #ececed; border:0; height: 45px;">
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label name="x" class="col-lg-2 col-md-2 col-sm-3 col-xs-4 extra-space" style="color: #1e1350;">Last name</label>
+							<div class="col-lg-10 col-md-10 col-sm-9 col-xs-8">
+								<input type="text" class="form-control extra-space" style="background-color: #ececed; border:0; height: 45px;">
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label name="x"  class="col-lg-2 col-md-2 col-sm-3 col-xs-4 extra-space" style="color: #1e1350;">Birth date</label>
+							<div class="col-lg-10 col-md-10 col-sm-9 col-xs-8">
+								<input type="date" class="form-control extra-space" style="background-color: #ececed; border:0; height: 45px;">
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label name="x" class="col-lg-2 col-md-2 col-sm-3 col-xs-4 extra-space" style="color: #1e1350;">Email</label>
+							<div class="col-lg-10 col-md-10 col-sm-9 col-xs-8">
+								<input type="email" class="form-control extra-space" style="background-color: #ececed; border:0; height: 45px;">
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label name="x" class="col-lg-2 col-md-2 col-sm-3 col-xs-4 extra-space" style="color: #1e1350;">Phone</label>
+							<div class="col-lg-10 col-md-10 col-sm-9 col-xs-8">
+								<input type="text" class="form-control extra-space" style="background-color: #ececed; border:0; height: 45px;">
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label name="x" class="col-lg-2 col-md-2 col-sm-3 col-xs-4 extra-space" style="color: #1e1350;">Nationality</label>
+							<div class="col-lg-10 col-md-10 col-sm-9 col-xs-8">
+								<input type="text" class="form-control extra-space" style="background-color: #ececed; border:0; height: 45px;">
+							</div>
+						</div>
+
+
+						<div class="form-group">
+							<label name="x"  class="col-lg-2 col-md-2 col-sm-3 col-xs-4 extra-space" style="color: #1e1350;">Address</label>
+							<div class="col-lg-10 col-md-10 col-sm-9 col-xs-8">
+								<input type="text" class="form-control extra-space" style="background-color: #ececed; border:0; height: 45px;">
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label name="x"  class="col-lg-2 col-md-2 col-sm-3 col-xs-4 extra-space" style="color: #1e1350;">City</label>
+							<div class="col-lg-10 col-md-10 col-sm-9 col-xs-8">
+								<input type="text" class="form-control extra-space" style="background-color: #ececed; border:0; height: 45px;">
+							</div>
+						</div>
+						<div class="form-group">
+							<label name="x"  class="col-lg-2 col-md-2 col-sm-3 col-xs-4 extra-space" style="color: #1e1350;">Country</label>
+							<div class="col-lg-10 col-md-10 col-sm-9 col-xs-8">
+								<input type="text" class="form-control extra-space" style="background-color: #ececed; border:0; height: 45px;">
+							</div>
+						</div>
+
+						<button name="xx" type="submit" class="btn btn-default pull-right save-btn">Save changes</button>
+
+					</div>
+
+
+					<div class="profile-info" id="subscriptions">
+						<h3 style="color: #1e1350; font-weight: bold; margin-bottom: 5%;">Subscriptions</h3>
+						<div class="table-responsive">          
+
+							<div class="row">
+								<div class="col-lg-2 col-md-3 col-sm-3 col-xs-4">
+									<center>
+										<img src="../images/no-logo.jpg" width="80">
+									</center>
+								</div>
+								<div class="col-lg-4 col-md-4 col-sm-4 col-xs-5">
+									<a href="shopPage.html" class="pull-left" style="display: inline-block; margin-top:30px;">Anna's shop</a>
+
+								</div>
+
+							</div>
+							<hr>
+
+							<div class="row">
+								<div class="col-lg-2 col-md-3 col-sm-3 col-xs-4">
+									<center>
+										<img src="../images/no-logo.jpg" width="80">
+									</center>
+								</div>
+								<div class="col-lg-4 col-md-4 col-sm-4 col-xs-5">
+									<a href="shopPage.html" class="pull-left" style="display: inline-block; 	margin-top:30px;">Anna's shop</a>
+
+								</div>
+
+							</div>
+							<hr>
+
+							<div class="row">
+								<div class="col-lg-2 col-md-3 col-sm-3 col-xs-4">
+									<center>
+										<img src="../images/no-logo.jpg" width="80">
+									</center>
+								</div>
+								<div class="col-lg-4 col-md-4 col-sm-4 col-xs-5">
+									<a href="shopPage.html" class="pull-left" style="display: inline-block; margin-top:30px;">Anna's shop</a>
+
+								</div>
+
+							</div>
+							<hr>
+
+							<div class="row">
+								<div class="col-lg-2 col-md-3 col-sm-3 col-xs-4">
+									<center>
+										<img src="../images/no-logo.jpg" width="80">
+									</center>
+								</div>
+								<div class="col-lg-4 col-md-4 col-sm-4 col-xs-5">
+									<a href="shopPage.html" class="pull-left" style="display: inline-block; margin-top:30px;">Anna's shop</a>
+
+								</div>
+
+							</div>
+							<hr>
+
+							<div class="row">
+								<div class="col-lg-2 col-md-3 col-sm-3 col-xs-4">
+									<center>
+										<img src="../images/no-logo.jpg" width="80">
+									</center>
+								</div>
+								<div class="col-lg-4 col-md-4 col-sm-4 col-xs-5">
+									<a href="shopPage.html" class="pull-left" style="display: inline-block; margin-top:30px;">Anna's shop</a>
+
+								</div>
+
+							</div>
+							<hr>
+
+							<div class="row">
+								<div class="col-lg-2 col-md-3 col-sm-3 col-xs-4">
+									<center>
+										<img src="../images/no-logo.jpg" width="80">
+									</center>
+								</div>
+								<div class="col-lg-4 col-md-4 col-sm-4 col-xs-5">
+									<a href="shopPage.html" class="pull-left" style="display: inline-block; margin-top:30px;">Anna's shop</a>
+
+								</div>
+
+							</div>
+							<hr>
+							<div class="row">
+								<div class="col-lg-2 col-md-3 col-sm-3 col-xs-4">
+									<center>
+										<img src="../images/no-logo.jpg" width="80">
+									</center>
+								</div>
+								<div class="col-lg-4 col-md-4 col-sm-4 col-xs-5">
+									<a href="shopPage.html" class="pull-left" style="display: inline-block; margin-top:30px;">Anna's shop</a>
+
+								</div>
+
+							</div>
+							<hr>
+							<div class="row">
+								<div class="col-lg-2 col-md-3 col-sm-3 col-xs-4">
+									<center>
+										<img src="../images/no-logo.jpg" width="80">
+									</center>
+								</div>
+								<div class="col-lg-4 col-md-4 col-sm-4 col-xs-5">
+									<a href="shopPage.html" class="pull-left" style="display: inline-block; margin-top:30px;">Anna's shop</a>
+
+								</div>
+
+							</div>
+							<hr>
+							<div class="row">
+								<div class="col-lg-2 col-md-3 col-sm-3 col-xs-4">
+									<center>
+										<img src="../images/no-logo.jpg" width="80">
+									</center>
+								</div>
+								<div class="col-lg-4 col-md-4 col-sm-4 col-xs-5">
+									<a href="shopPage.html" class="pull-left" style="display: inline-block; margin-top:30px;">Anna's shop</a>
+
+								</div>
+							</div>
+							<hr>
+						</div>
+					</div>
+				</div>
+				<!-- /.col-lg-9 -->
+			</div>
+			<!-- /.row -->
+			<div class="row small">
+				<div class="col-xs-12" >
+					<div style="margin: 0 auto;"> 
+						<div class="row">
+							<div class="col-xs-12">
+								<img align="left" class="profile-photo thumbnail center-block" src="../images/no-image.png"/>
+
+							</div>
+
+							<div class="col-xs-12">
+								<h2 class="" style="text-align: center; color: #1e1350; font-weight: bold; margin-bottom: 3%;">Mariam Mostafa</h2>
+							</div>
+							<div class="col-xs-12">
+								<ul style="list-style:none;margin-bottom: 3%; margin-left: -9%;" class="text update center-block">
+									<center><li><a href="#" data-toggle="modal" class="update" data-target="#UpdatePP" style="color: #1f87e6;"> <i class="fa fa-pencil update" aria-hidden="true" style=""></i> Update your photo</a></li></center>
+									<center><li><a href="#" data-toggle="modal" class="update" data-target="#ResetPassword" style="color: #1f87e6"> <i class="fa fa-pencil update" aria-hidden="true"></i> Reset password</a></li></center>
+								</ul>
+							</div>
+							<div class="col-xs-12">
+
+								<center>   
+									<div class="list-group" style="width:70%;">
+										<a name="hover" class="list-group-item active" style="color: #1e1350; font-weight: bold;" onclick="showPageElement('edit1');">Edit personal info</a>
+										<a name="hover" style="color: #1e1350; font-weight: bold;" class="list-group-item" onclick="showPageElement('subscriptions1');">Subscriptions</a>
+									</div>
+								</center>
+								<a class="btn btn-lg center-block shop-btn" name="x"> 
+									<i class="fa fa-briefcase" aria-hidden="true"></i> Create your shop</a>
+
+								</div>
+							</div>
+
+						</div>
+					</div>
+					<!-- /.col-lg-3 -->
+
+					<div class="col-xs-12">
+						<div class="profile-info small" id="edit1">
+							<h3 style="color: #1e1350; font-weight: bold; margin-bottom: 5%;">Edit personal info</h3>
+
+							<div class="form-group extra-space">
+								<label name="x" class="col-xs-12 extra-space" style="color: #1e1350;">First name</label>
+								<div class="col-xs-12">
+									<input type="text" class="form-control extra-space" style="background-color: #ececed; border:0; height: 45px;">
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label name="x" class="col-xs-12 extra-space" style="color: #1e1350;">Last name</label>
+								<div class="col-xs-12">
+									<input type="text" class="form-control extra-space" style="background-color: #ececed; border:0; height: 45px;">
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label name="x"  class="col-xs-12 extra-space" style="color: #1e1350;">Birth date</label>
+								<div class="col-xs-12">
+									<input type="date" class="form-control extra-space" style="background-color: #ececed; border:0; height: 45px;">
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label name="x" class="col-xs-12 extra-space" style="color: #1e1350;">Email</label>
+								<div class="col-xs-12">
+									<input type="email" class="form-control extra-space" style="background-color: #ececed; border:0; height: 45px;">
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label name="x" class="col-xs-12 extra-space" style="color: #1e1350;">Phone</label>
+								<div class="col-xs-12">
+									<input type="text" class="form-control extra-space" style="background-color: #ececed; border:0; height: 45px;">
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label name="x" class="col-xs-12 extra-space" style="color: #1e1350;">Nationality</label>
+								<div class="col-xs-12">
+									<input type="text" class="form-control extra-space" style="background-color: #ececed; border:0; height: 45px;">
+								</div>
+							</div>
+
+
+							<div class="form-group">
+								<label name="x"  class="col-xs-12 extra-space" style="color: #1e1350;">Address</label>
+								<div class="col-xs-12">
+									<input type="text" class="form-control extra-space" style="background-color: #ececed; border:0; height: 45px;">
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label name="x"  class="col-xs-12 extra-space" style="color: #1e1350;">City</label>
+								<div class="col-xs-12">
+									<input type="text" class="form-control extra-space" style="background-color: #ececed; border:0; height: 45px;">
+								</div>
+							</div>
+							<div class="form-group">
+								<label name="x"  class="col-xs-12 extra-space" style="color: #1e1350;">Country</label>
+								<div class="col-xs-12">
+									<input type="text" class="form-control extra-space" style="background-color: #ececed; border:0; height: 45px;">
+								</div>
+							</div>
+
+							<center>
+								<button name="xx" type="submit" class="btn save-btn">Save changes</button>
+							</center>
+
+						</div>
+
+						<div class="profile-info" id="subscriptions1">
+							<h3 style="color: #1e1350; font-weight: bold; margin-bottom: 5%;">Subscriptions</h3>
+							<div class="table-responsive">          
+
+								<div class="row">
+									<div class="col-lg-2 col-md-3 col-sm-3 col-xs-4">
+										<center>
+											<img src="../images/no-logo.jpg" width="80">
+										</center>
+									</div>
+									<div class="col-lg-4 col-md-4 col-sm-4 col-xs-5">
+										<a href="shopPage.html" class="pull-left" style="display: inline-block; margin-top:30px;">Anna's shop</a>
+
+									</div>
+
+								</div>
+								<hr>
+
+								<div class="row">
+									<div class="col-lg-2 col-md-3 col-sm-3 col-xs-4">
+										<center>
+											<img src="../images/no-logo.jpg" width="80">
+										</center>
+									</div>
+									<div class="col-lg-4 col-md-4 col-sm-4 col-xs-5">
+										<a href="shopPage.html" class="pull-left" style="display: inline-block; 	margin-top:30px;">Anna's shop</a>
+
+									</div>
+
+								</div>
+								<hr>
+
+								<div class="row">
+									<div class="col-lg-2 col-md-3 col-sm-3 col-xs-4">
+										<center>
+											<img src="../images/no-logo.jpg" width="80">
+										</center>
+									</div>
+									<div class="col-lg-4 col-md-4 col-sm-4 col-xs-5">
+										<a href="shopPage.html" class="pull-left" style="display: inline-block; margin-top:30px;">Anna's shop</a>
+
+									</div>
+
+								</div>
+								<hr>
+
+								<div class="row">
+									<div class="col-lg-2 col-md-3 col-sm-3 col-xs-4">
+										<center>
+											<img src="../images/no-logo.jpg" width="80">
+										</center>
+									</div>
+									<div class="col-lg-4 col-md-4 col-sm-4 col-xs-5">
+										<a href="shopPage.html" class="pull-left" style="display: inline-block; margin-top:30px;">Anna's shop</a>
+
+									</div>
+
+								</div>
+								<hr>
+
+								<div class="row">
+									<div class="col-lg-2 col-md-3 col-sm-3 col-xs-4">
+										<center>
+											<img src="../images/no-logo.jpg" width="80">
+										</center>
+									</div>
+									<div class="col-lg-4 col-md-4 col-sm-4 col-xs-5">
+										<a href="shopPage.html" class="pull-left" style="display: inline-block; margin-top:30px;">Anna's shop</a>
+
+									</div>
+
+								</div>
+								<hr>
+
+								<div class="row">
+									<div class="col-lg-2 col-md-3 col-sm-3 col-xs-4">
+										<center>
+											<img src="../images/no-logo.jpg" width="80">
+										</center>
+									</div>
+									<div class="col-lg-4 col-md-4 col-sm-4 col-xs-5">
+										<a href="shopPage.html" class="pull-left" style="display: inline-block; margin-top:30px;">Anna's shop</a>
+
+									</div>
+
+								</div>
+								<hr>
+								<div class="row">
+									<div class="col-lg-2 col-md-3 col-sm-3 col-xs-4">
+										<center>
+											<img src="../images/no-logo.jpg" width="80">
+										</center>
+									</div>
+									<div class="col-lg-4 col-md-4 col-sm-4 col-xs-5">
+										<a href="shopPage.html" class="pull-left" style="display: inline-block; margin-top:30px;">Anna's shop</a>
+
+									</div>
+
+								</div>
+								<hr>
+								<div class="row">
+									<div class="col-lg-2 col-md-3 col-sm-3 col-xs-4">
+										<center>
+											<img src="../images/no-logo.jpg" width="80">
+										</center>
+									</div>
+									<div class="col-lg-4 col-md-4 col-sm-4 col-xs-5">
+										<a href="shopPage.html" class="pull-left" style="display: inline-block; margin-top:30px;">Anna's shop</a>
+
+									</div>
+
+								</div>
+								<hr>
+								<div class="row">
+									<div class="col-lg-2 col-md-3 col-sm-3 col-xs-4">
+										<center>
+											<img src="../images/no-logo.jpg" width="80">
+										</center>
+									</div>
+									<div class="col-lg-4 col-md-4 col-sm-4 col-xs-5">
+										<a href="shopPage.html" class="pull-left" style="display: inline-block; margin-top:30px;">Anna's shop</a>
+
+									</div>
+
+								</div>
+								<hr>
+							</div>
+
+						</div>
+
+
+					</div>
+					<!-- /.col-lg-9 -->
+				</div>
+
+
+			</div>
+			<!-- /.container -->
+
+			<!-- FOOTER -->
+
+			<footer>
+				<div class="footer">
+					<div class="container centered">
+						<div class="row mariam oldold">
+
+							<div class="col-lg-3 col-sm-3 col-xs-3">
+								<img src="../images/newlogo1.png" height="160" style="margin-bottom: 2%;">
+							</div>
+
+							<div class="col-lg-7 col-md-7 col-sm-7 col-xs-7">
+								<div class="footer-form">
+									<label  class="label-footer">Join now to get the latest offers</label>
+
+									<div class="row mariam old">
+										<div class=" col-lg-8 col-md-8 col-sm-8 col-xs-10">
+											<input type="text" class="form-control no-radius footer-text" placeholder="Enter your e-mail">
+										</div>
+										<div class="col-lg-3 col-md-2 col-sm-2 col-xs-12">
+											<button type="submit" name="x" class="btn btn-default join_btn no-radius" name="x">Join now</button>
+										</div>
+										<div class="col-lg-1 col-md-2 col-sm-2 "></div>
+									</div>
+
+									<div class="row mariam new">
+										<div class="col-xs-10">
+											<input type="text" class="form-control no-radius footer-text" placeholder="Enter your e-mail">
+										</div>
+										<div class="col-xs-2 "></div>
+
+
+										<div class="col-xs-10">
+											<button type="submit" name="x" class="btn btn-default join_btn no-radius" name="x">Join now</button>
+										</div>
+										<div class="col-xs-2 "></div>
+
+									</div>
+
+
+								</div>
+							</div>
+
+							<div class="col-sm-2 col-xs-2">
+								<div class="pull-right">
+									<div>
+										<i class="fa fa-twitter fa-2x pull-right" aria-hidden="true" style="margin-left:15%; margin-top: 40%;"></i>
+										<i class="fa fa-facebook fa-2x pull-right" aria-hidden="true" style="margin-top: 40%;"></i>
+									</div>
+									<ul style="list-style: none; margin-top: 26%; overflow: auto;" class="pull-right">
+										<li><a href="#" data-toggle="modal" data-target="#ContactUs" style="color: #FFFFFF; padding-bottom: 5px;white-space: nowrap;" class="pull-right">Contact us</a></li>
+										<li><a href="#" style="color: #FFFFFF" class="pull-right">Policies</a></li>
+									</ul>
+								</div> 
+							</div>
+
+						</div>
+
+
+
+						<div class="row mariam newnew">
+							<div class="col-xs-6">
+								<img src="../images/newlogo1.png" height="140" style="margin-top: -2%; margin-left: -10%;">
+							</div>
+
+							<div class="col-xs-6">
+								<div class="pull-right">
+									<div>
+										<i class="fa fa-twitter fa-2x pull-right" aria-hidden="true" style="margin-left:15%; margin-top: 30%;"></i>
+										<i class="fa fa-facebook fa-2x pull-right" aria-hidden="true" style="margin-top: 30%;"></i>
+									</div>
+									<ul style="list-style: none; margin-top: 26%; overflow: auto;" class="pull-right">
+										<li><a href="#" data-toggle="modal" data-target="#ContactUs" style="color: #FFFFFF; padding-bottom: 5px;white-space: nowrap;" class="pull-right">Contact us</a></li>
+										<li><a href="#" style="color: #FFFFFF" class="pull-right">Policies</a></li>
+									</ul>
+								</div> 
+							</div>
+
+							<div class="col-xs-12">
+								<div class="footer-form">
+									<label  class="label-footer">Join now to get the latest offers</label>
+									<div class="row mariam">
+										<div class="col-xs-8">
+											<input type="text" class="form-control no-radius footer-text" placeholder="Enter your e-mail">
+										</div>
+										<div class="col-xs-4">
+											<button type="submit" name="x" class="btn btn-default join_btn no-radius" name="x" >Join now</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+
+			<!-- END FOOTER -->
+
+			<!-- CONTACT US MODAL -->
+
+			<div class="modal fade" id="ContactUs" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+				<div class="modal-dialog modal-md">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+							<h3 class="modal-title" id="lineModalLabel"><strong>Contact us</strong></h3>
+						</div>
+
+						<div class="modal-body">
+							<form class="popup-form">
+								<div class="form-group">
+									<label name="x">Name</label>
+									<input type="text" class="form-control" style="background-color: #ececed; border:0; height: 45px;">
+								</div>
+
+								<div class="form-group">
+									<label name="x">Email Address</label>
+									<input type="email" class="form-control" style="background-color: #ececed; border:0; height: 45px;">
+								</div> 
+
+								<div class="form-group">
+									<label name="x">Subject</label>
+									<input type="text" class="form-control" style="background-color: #ececed; border:0; height: 45px;">
+								</div>
+
+								<div class="form-group">
+									<label name="x">Message</label>
+									<textarea class="form-control" rows="5" style="background-color: #ececed; border:0;"></textarea>
+
+								</div>
+								<center>
+									<button name="xx" type="submit" class="btn popup-btn">Send message</button>
+
+								</center>
+							</form>
+						</div >
+
+					</div>
+				</div>
+			</div>
+
+			<!-- END CONTACT US MODAL -->
+
+			<!-- UPLOAD PHOTO MODAL -->
+
+			<div class="modal fade" id="UpdatePP" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+				<div class="modal-dialog modal-md">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+							<h3 class="modal-title" id="lineModalLabel"><strong>Update your profile photo </strong></h3>
+						</div>
+
+						<div class="modal-body">
+							<form class="popup-form">
+								<div class="form-group">
+									<label name="x">Choose a photo</label>
+									<!-- <div class="btn form-control"> -->
+									<input type="file" style="background-color: #ececed; border:0; height: 45px; padding-top: 10px;" class="form-control upload-btn">                
+
+								</div>
+
+							</div>
+							<center>
+								<button name="xx" type="submit" class="btn popup-btn" style="margin-bottom: 5%; margin-top: -1%;">Upload photo</button>
+
+							</center>
+						</form>
+					</div >
+
+				</div>
+			</div>
+		</div>
+
+
+		<!-- END UPLOAD PHOTO MODAL -->
+
+
+		<!-- RESET PASSWORD MODAL -->
+
+		<div class="modal fade" id="ResetPassword" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-md">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+						<h3 class="modal-title" id="lineModalLabel"><strong>Reset your password</strong></h3>
+					</div>
+
+					<div class="modal-body">
+						<form class="popup-form">
+							<div class="form-group">
+								<label name="x">Enter your email address & we'll send you a link to reset your password</label>
+								<input type="text" class="form-control" style="background-color: #ececed; border:0; height: 45px;">
+							</div>
+							<center>
+								<button type="submit" name="xx" class="btn popup-btn">Submit</button>
+
+							</center>
+						</form>
+					</div >
+
+				</div>
+			</div>
+		</div>
+
+		<!-- END RESET PASSWORD MODAL MODAL -->
+
+
+		<!-- jQuery -->
+		<script src="../js/jquery.js"></script>
+
+		<!-- Bootstrap Core JavaScript -->
+		<script src="../js/bootstrap.min.js"></script>
+
+
+		<script type="text/javascript">
+
+			function windowSize() {
+				windowHeight = window.innerHeight ? window.innerHeight : $(window).height();
+				windowWidth = window.innerWidth ? window.innerWidth : $(window).width();
+
+			}
+
+//Init Function of init it wherever you like...
+windowSize();
+
+// For example, get window size on window resize
+$(window).resize(function() {
+	windowSize();
+	hideAll();
+	if (windowWidth < 815) {
+		// if($("#subscriptions").hasClass('active'))
+		// 	showPageElement("subscriptions1");
+		// 	else 
+		showPageElement("edit1");
+	}else{
+		// if($("#subscriptions1").hasClass('active'))
+		// 	showPageElement("subscriptions");
+		// 	else
+			showPageElement("edit");
+	}
+});
+
+window.onload = function(){
+	windowSize();
+	hideAll();
+	if (windowWidth < 815) {
+		showPageElement("edit1");
+	}else{
+		showPageElement("edit");
+	}
+
+}
+
+$('.list-group').on('click','a', function(){
+	$(this).addClass('active').siblings().removeClass('active');
+});
+
+function hideAll() {
+	windowSize();
+	if (windowWidth < 815) {
+		document.getElementById("edit1").style.display="none";
+		document.getElementById("subscriptions1").style.display="none";
+	}else{
+		document.getElementById("edit").style.display="none";
+		document.getElementById("subscriptions").style.display="none";
+	}
+}
+
+function showPageElement(what) {
+	hideAll();
+	document.getElementById(what).style.display="block";  
+}  
+
+function hidePageElement(what)  
+{  
+	var obj = typeof what == 'object'  
+	? what : document.getElementById(what);  
+
+	obj.style.display = 'none';  
+	return false;  
+}  
+
+</script>  
+
+</body>
+
+</html>
+
+<!-- <ul class="nav nav-pills nav-stacked">
+  ...
+</ul> -->

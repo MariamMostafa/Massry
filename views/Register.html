@@ -1,0 +1,1094 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Full Width Pics - Start Bootstrap Template</title>
+
+  <!-- Bootstrap Core CSS -->
+  <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="../css/full-width-pics.css" rel="stylesheet">
+
+  <link href="../font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+  <link href='https://fonts.googleapis.com/css?family=Galindo' rel='stylesheet'>
+
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.../js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+
+        <style type="text/css">
+
+
+
+          @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+          *{
+            font-family: 'Open Sans', sans-serif;
+          }
+
+          .extra-space {
+            margin-bottom: 2%;
+          }
+
+          .new-container {
+          	width:75%;
+          	margin: auto;
+          }
+
+
+          textarea {
+  resize:none;
+}
+
+.profile-info {
+  width:100%;
+  margin:0 auto;
+  /*margin-left: -10%;*/
+/*  margin-left: -12%;
+  margin-top: -2%;
+*/}
+
+.save-btn {
+  background: linear-gradient(to right, #0e0a34 0%, #e60046 100%); 
+  color: #FFFFFF; 
+  height: 50px; 
+  min-width: 200px; 
+  font-size:16px; 
+  margin-top: 20px; 
+  margin-bottom: 30px;
+  margin-right: 1.5%;
+  border: 0;
+}
+
+
+button[name="x"]:hover {
+  color: #FFFFFF;
+  background-color: #e60046;
+
+}
+
+button[name="x"]:focus{
+  color: #FFFFFF;
+  background-color: #e60046;
+
+}
+
+button:active {
+  color: #FFFFFF;
+}
+
+
+.centered {
+  padding-left: 0;
+  padding-right: 0;
+  width:85%;
+  margin: 0px auto;
+}
+
+.row.mariam > [class*='col-'] {
+  padding-right:0;
+  padding-left:0;
+}
+
+/*NavBar*/
+
+.navbar-brand {
+  font-family: 'Galindo';
+  font-size: 27px;
+  padding-left: 0;
+  font-weight: lighter;
+}
+
+h5.brand-name{
+ /*font-family: 'Galindo';*/
+ font-family: 'Kavoon';
+ /*font-family: 'Sofia';*/font-size: 20px;
+ padding-left: 0;
+ font-weight: bold;
+}
+
+.navbar {
+  border: 0;
+  margin-bottom: 0;
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
+
+  border-radius: 0;
+  background: #8e0247;
+
+}
+
+.no-radius {
+  border-radius: 0;
+}
+
+/*END NavBar*/
+
+
+.cover-photo {
+  position: relative;
+  background-image: url('../images/100.jpg');
+  background-position: center;
+  background-size: cover;
+  height: 400px;
+  z-index: 0;
+  margin-bottom: 2%;
+
+}
+
+.transparent-layer {
+  background-color:rgba(130,17,94,0.7);
+  position: absolute;
+  top: 0px; 
+  right: 0px; 
+  width:100%; 
+  height: 400px;
+  z-index: 0;
+}
+
+
+/*Footer*/
+
+div .row.mariam.newnew {
+  display: none;
+}
+
+div .row.mariam.new {
+  display: none;
+}
+
+footer{
+  margin-top:3%;
+  margin-bottom:0;
+
+}
+
+footer-icons {
+  margin-top: 4%;
+}
+
+.fa-2x{
+  font-size:1.8em;
+}
+
+.footer {
+  margin: 3% 0 0 0 0;
+  height: 10%;
+  width: 100%;
+  color: #FFFFFF;
+  background-color: #0a061a;
+}
+
+.join_btn {
+
+  width:100%;
+  height: 42px;
+  background-color: #e60046;
+  color: #ffffff;
+  white-space: normal;
+  border:0;
+}
+
+.footer-text {
+  min-width: 40px; 
+  height: 42px; 
+  margin-right: 5px;
+}
+
+.footer-text {
+  width:98%;  
+}
+
+.footer-form {
+  /*padding-left: -1%;*/
+  padding-top: 66px;
+}
+
+.label-footer {
+  padding-bottom: 5px; margin-left: -11px;
+}
+
+@media screen and (max-width: 502px){
+  div .row.mariam.newnew {
+    display: inline;
+  }
+
+  div .row.mariam.oldold {
+    display: none;
+  }
+
+
+  .fa-2x{
+    font-size:1.8em;
+  }
+
+  .join_btn {
+    width: 100% ;  
+  }
+
+  .footer-text {
+    width:98%; 
+
+  }
+
+  .footer-form {
+    /*margin-left:  4%;*/
+    padding-top: 0px;
+  }
+}
+
+@media screen and (min-width: 502px) and (max-width: 769px){
+  div .row.mariam.old{
+    display: none;
+  }
+  div .row.mariam.new{
+    display: inline;
+  }
+
+  .fa-2x{
+    font-size:1.6em;
+  }
+
+  .join_btn {
+    min-width: 150px ;
+    margin-top: 5px;
+
+  }
+
+  .footer-text {
+    width:100%;  
+  }
+
+  .label-footer {
+    margin-left: 2px;
+  }
+
+  .footer-form {
+    margin-left:  4%;
+    padding-top: 40px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 935px){
+  .fa-2x{
+    font-size:1.6em;
+  }
+  .join_btn {
+    min-width: 150px ;
+    /*width: 8%;*/  
+  }
+
+  .footer-text {
+    width:98%;  
+  }
+
+  .footer-form {
+    /*padding-left: -1%;*/
+    padding-top: 66px;
+  }
+}
+
+/*END Footer*/
+
+div.row.mariam.extra-small {
+  display: none;
+}
+
+div.xs {
+  display: none;
+}
+
+  /*Modal*/
+
+label[name="x"] {
+  margin-bottom: 10px;
+}
+
+.modal-content{
+  border-radius: 0; 
+}
+.modal-header {
+  padding-bottom: 5px;
+
+}
+
+textarea {
+  resize:none;
+}
+
+.modal-header .close {
+  padding-top:5px;
+  padding-right: 2px;
+}
+
+.modal-footer {
+  padding: 0;
+}
+
+.modal-footer .btn-group {
+  height:40px;
+  border-top-left-radius : 0;
+  border-top-right-radius : 0;
+  border: none;
+  border-right: 1px solid #ddd;
+}
+
+.modal-footer .btn-group:last-child > button {
+  border-right: 0;
+}
+
+body.modal-open {
+  padding-right: 0 !important;
+  overflow: inherit;
+}
+body.modal-open, .modal-open .navbar-fixed-top, .modal-open .navbar-fixed-bottom { margin-right: 0; }
+
+button[name="tw"]:hover {
+  background: #00adf2; 
+  color: #FFFFFF;
+}
+
+button[name="tw"]:focus {
+  background: #00adf2; 
+  color: #FFFFFF;
+} 
+
+.twitter-btn {
+  margin-bottom: 20px; 
+  border-radius: 15px; 
+  background: #00adf2; 
+  color: #FFFFFF; 
+  height: 45px; 
+  width: 200px; 
+  font-size:17px; 
+  margin-top: 20px;
+}
+
+button[name="fb"]:hover {
+  background: #0c2c67; 
+  color: #FFFFFF; 
+}
+
+button[name="fb"]:focus {
+  background: #0c2c67; 
+  color: #FFFFFF; 
+}
+
+.fb-btn {
+  margin-bottom: 20px;
+  border-radius: 15px; 
+  background: #0c2c67; 
+  color: #FFFFFF; 
+  height: 45px; 
+  width: 200px; 
+  font-size:17px; 
+  margin-top: 20px;
+}
+
+button[name="xx"]:hover {
+  background: linear-gradient(to right, #0e0a34 0%, #e60046 100%); 
+  color: #FFFFFF; 
+}
+
+button[name="xx"]:active {
+  background: linear-gradient(to right, #0e0a34 0%, #e60046 100%); 
+  color: #FFFFFF;
+}
+
+button[name="xx"]:focus {
+  background: linear-gradient(to right, #0e0a34 0%, #e60046 100%); 
+  color: #FFFFFF; 
+}
+
+.popup-btn {
+  background:/*#e60046*/ linear-gradient(to right, #0e0a34 0%, #e60046 100%); 
+  color: #FFFFFF; 
+  height: 50px; 
+  width: 200px; 
+text-align: center;
+  font-size:16px; 
+  margin-top: 20px; 
+  margin-bottom: 10px;
+  margin-right: 1.5%;
+  border: 0;
+}
+
+.popup-form{
+  margin: 0 auto;
+}
+
+.fa-2{
+  font-size:1.6em;
+}
+
+.modal-header{
+  border-bottom: 2px solid #ececed;
+}
+
+.modal-title {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.modal-footer{
+  border-top: none;
+}
+
+h4  {
+ width: 100%; 
+ text-align: center; 
+ border-bottom: 2px solid #ececed; 
+ line-height: 0.2em;
+ margin: 10px 0 20px; 
+}
+
+h4 span{ 
+  background: #FFFFFF; 
+  padding:0 10px; 
+
+}
+
+h5  {
+ width: 100%; 
+ text-align: center; 
+ border-bottom: 2px solid #ececed; 
+ line-height: 0.2em;
+ margin: 10px 0 20px; 
+}
+
+h5 span{ 
+  background: #FFFFFF; 
+  padding:0 10px; 
+
+}
+
+.modal-footer-text{
+  width: 90%;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width : 768px) {
+.modal-dialog {
+  width: 500px;
+  margin: 30px auto;
+}
+
+
+}
+
+@media screen and (max-width: 600px){
+  .modal-dialog {
+    width: 450px;
+    margin: 30px auto;
+  }
+}
+
+@media (max-width: 520px){
+  .modal-dialog {
+    width: 400px;
+    margin: 30px auto;
+  }
+}
+
+
+@media (max-width: 500px){
+  .modal-dialog {
+    width: 380px;
+    margin: 30px auto;
+  }
+}
+
+@media (max-width: 450px){
+  .modal-dialog {
+    width: 350px;
+    margin: 30px auto;
+  }
+}
+
+@media (max-width: 400px){
+  .modal-dialog {
+    width: 90%;
+    margin: 30px auto;
+  }
+  .popup-btn {
+    width: 60%; 
+    font-size:16px; 
+    margin: auto;
+  }
+}
+
+/*END Modal*/
+
+
+div.xxs{
+	display: none;
+}
+/*MEDIA QUERIES*/
+
+@media screen and (max-width: 450px){
+  div.xs {
+    display: inline;
+  }
+
+  div.lg {
+    display: none;
+  }
+
+
+  .save-btn {
+    min-width:110px;
+    font-size: 95%;  
+  margin-top: 20px; 
+  margin-bottom: 30px;
+  }
+
+  .fb-btn, .twitter-btn {
+  /*max-width: 160px; */
+  font-size:15px; 
+		margin-top: 5px;
+
+}
+
+	.fb-btn {
+		margin-top: -10px;
+		margin-bottom: 30px;
+	}
+
+  .cover-photo {
+    height: 200px;
+  }
+
+  .transparent-layer {
+    height: 200px;
+  }
+
+}
+
+@media screen and (min-width: 450px) and (max-width: 643px){
+    div.xs {
+    display: inline;
+  }
+
+  div.lg {
+    display: none;
+  }
+
+    .fb-btn, .twitter-btn {
+  /*max-width: 173px; */
+  font-size:15px; 
+		margin-top: 5px;
+
+}
+	.fb-btn {
+		margin-top: -10px;
+
+		margin-bottom: 30px;
+	}
+
+  .save-btn {
+    min-width:150px;
+    font-size: 95%; 
+  }
+
+  .cover-photo {
+    height: 200px;
+  }
+
+  .transparent-layer {
+    height: 200px;
+  }
+
+}
+
+
+@media screen and (min-width: 450px) and (max-width: 768px){
+
+	    .fb-btn, .twitter-btn {
+  /*max-width: 173px; */
+  font-size:15px; 
+		margin-top: 5px;
+
+}
+	.fb-btn {
+		margin-top: -10px;
+
+		margin-bottom: 30px;
+	}
+
+}
+
+@media screen and (width: 768px){
+	.fb-btn {
+		margin-top: 5px;
+	}
+}
+
+@media screen and (min-width: 643px) and (max-width: 800px){
+    div.xs {
+    display: inline;
+  }
+
+  div.lg {
+    display: none;
+  }
+
+
+  .save-btn {
+    min-width:150px;
+    font-size: 95%; 
+  }
+
+  .cover-photo {
+    height: 180px;
+  }
+
+  .transparent-layer {
+    height: 180px;
+  }
+
+}
+
+@media screen and (min-width: 927px)  and (max-width: 1050px){
+  .cover-photo {
+    height: 200px;
+  }
+
+  .new-container {
+  	width: 70%;
+  }
+
+  .transparent-layer {
+    height: 200px;
+  }        
+}
+
+@media screen and (min-width: 1050px){
+	.new-container {
+		width: 57%;
+	}
+}
+
+    /*Upload Button*/
+
+    .upload-btn::-webkit-file-upload-button {
+      visibility: hidden;
+    }
+
+    .upload-btn::before {
+      content: "Choose file";
+      color: #FFFFFF;
+      display: inline-block;
+      border: 0;
+      background-color: #e60046;
+      border-radius: 4px;
+      padding: 2px 6px;
+      outline: none;
+      white-space: nowrap;
+      -webkit-user-select: none;
+      cursor: pointer;
+    }
+
+    .upload-btn:active::before {
+      background-color: #e60046;
+    }
+
+    /*END Upload Button*/
+
+</style>
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container centered">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+        <img src="../images/shoppingcart.png" style="float: left; padding-left: 0; margin-right:7px;" class="img" height="40">
+        <a class="navbar-brand" href="homepage.html" style="color: #FEF9F6;">Massry</a>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="about.html" data-toggle="modal" data-target="#LogIn" style="color: #FFFFFF">Log in</a>
+          </li>
+          <li>
+            <a href="Register.html" style="color: #FFFFFF">Register</a>
+          </li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+  </nav>
+
+  <!-- COVER IMAGE -->
+  <div class="cover-photo">
+    <!-- <img align="left" src="../../images/100.jpg" class="cover-photo"> -->
+    <div class="transparent-layer"> </div>
+  </div>
+
+  <!-- END COVER IMAGE -->
+
+  <div class="container centered">
+    <div class="row mariam large">
+    <div class="col-lg-2 col-md-1 col-sm-1 col-xs-1"></div>
+        <div class=" col-lg-8 col-md-10  col-sm-10 col-xs-10">
+          
+          <div class="profile-info pull-left">
+          <div class="lg">
+            <h1 style="color: #1e1350; font-weight: bold; margin-bottom: 5%;">Create your account</h1>
+          </div>
+          <div class="xs">
+            <center>
+            <h2 style="color: #1e1350; font-weight: bold; margin-bottom: 5%;">Create your account</h2>
+            </center>
+          </div>
+
+            <div class="form-group extra-space">
+              <label name="x" class="col-lg-2 col-md-2 col-sm-2 col-xs-12 extra-space" style="color: #1e1350;">First name</label>
+              <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
+                <input type="text" class="form-control extra-space" style="background-color: #ececed; border:0; height: 45px;">
+              </div>
+            </div>
+
+            <div class="form-group extra-space">
+              <label name="x" class="col-lg-2 col-md-2 col-sm-2 col-xs-12 extra-space" style="color: #1e1350;">Last name</label>
+              <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
+                <input type="text" class="form-control extra-space" style="background-color: #ececed; border:0; height: 45px;">
+              </div>
+            </div>
+
+            <div class="form-group extra-space">
+              <label name="x" class="col-lg-2 col-md-2 col-sm-2 col-xs-12 extra-space" style="color: #1e1350;">Profile picture</label>
+              <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
+                  <input type="file" style="background-color: #ececed; border:0; height: 45px; padding-top: 10px;" class="form-control upload-btn extra-space">       
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label name="x"  class="col-lg-2 col-md-2 col-sm-2 col-xs-12 extra-space" style="color: #1e1350;">Birth date</label>
+              <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
+                <input type="date" class="form-control extra-space" style="background-color: #ececed; border:0; height: 45px;">
+              </div>
+            </div>
+            
+
+            <div class="form-group">
+              <label name="x" class="col-lg-2 col-md-2 col-sm-2 col-xs-12 extra-space" style="color: #1e1350;">Email</label>
+              <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
+                <input type="email" class="form-control extra-space" style="background-color: #ececed; border:0; height: 45px;">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label name="x"  class="col-lg-2 col-md-2 col-sm-2 col-xs-12 extra-space" style="color: #1e1350;">Phone</label>
+              <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
+                <input type="text" class="form-control extra-space" style="background-color: #ececed; border:0; height: 45px;">
+              </div>
+            </div>
+
+
+            <div class="form-group">
+              <label name="x"  class="col-lg-2 col-md-2 col-sm-2 col-xs-12 extra-space" style="color: #1e1350;">Nationality</label>
+              <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
+                <input type="text" class="form-control extra-space" style="background-color: #ececed; border:0; height: 45px;">
+              </div>
+            </div>
+            
+
+
+            <div class="form-group">
+              <label name="x"  class="col-lg-2 col-md-2 col-sm-2 col-xs-12 extra-space" style="color: #1e1350;">Address</label>
+              <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
+                <input type="text" class="form-control extra-space" style="background-color: #ececed; border:0; height: 45px;">
+              </div>
+            </div>
+            
+
+            <div class="form-group">
+              <label name="x"  class="col-lg-2 col-md-2 col-sm-2 col-xs-12 extra-space" style="color: #1e1350;">City</label>
+              <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
+                <input type="text" class="form-control extra-space" style="background-color: #ececed; border:0; height: 45px;">
+              </div>
+            </div>
+            
+
+            <div class="form-group">
+              <label name="x"  class="col-lg-2 col-md-2 col-sm-2 col-xs-12 extra-space" style="color: #1e1350;">Country</label>
+              <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
+                <input type="text" class="form-control extra-space" style="background-color: #ececed; border:0; height: 45px;">
+              </div>
+            </div>
+            
+              <center>      
+            <button name="xx" type="submit" class="btn btn-default save-btn">Register</button>
+              </center>
+
+
+        <div class="modal-footer-text lg">
+          <h4><span>Or you can register</span></h4>
+        </div>
+
+   <div class="modal-footer-text xs">
+          <h5><span>Or you can register</span></h5>
+        </div>
+
+        <div class="container-fluid text-center">
+        <div class="new-container">
+
+          <div class="row mariam">
+
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+              <button name="tw" type="submit" class="btn btn-default twitter-btn">
+                <i class="fa fa-twitter fa-2" aria-hidden="true"></i>   with twitter</button>
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <button name="fb" type="submit" class="btn btn-default fb-btn">
+                  <i class="fa fa-facebook fa-2" aria-hidden="true"></i>   with facebook</button>
+                </div>
+              </div>
+            </div>
+</div>
+          </div>
+          </div>
+        </div>
+    </div>
+
+          <!-- FOOTER -->
+
+          <footer>
+            <div class="footer">
+              <div class="container centered">
+                <div class="row mariam oldold">
+
+                  <div class="col-lg-3 col-sm-3 col-xs-3">
+                    <img src="../images/newlogo1.png" height="160" style="margin-bottom: 2%;">
+                  </div>
+
+                  <div class="col-lg-7 col-md-7 col-sm-7 col-xs-7">
+                    <div class="footer-form">
+                      <label  class="label-footer">Join now to get the latest offers</label>
+
+                      <div class="row mariam old">
+                        <div class=" col-lg-8 col-md-8 col-sm-8 col-xs-10">
+                          <input type="text" class="form-control no-radius footer-text" placeholder="Enter your e-mail">
+                        </div>
+                        <div class="col-lg-3 col-md-2 col-sm-2 col-xs-12">
+                          <button type="submit" name="x" class="btn btn-default join_btn no-radius" name="x">Join now</button>
+                        </div>
+                        <div class="col-lg-1 col-md-2 col-sm-2 "></div>
+                      </div>
+
+                      <div class="row mariam new">
+                        <div class="col-xs-10">
+                          <input type="text" class="form-control no-radius footer-text" placeholder="Enter your e-mail">
+                        </div>
+                        <div class="col-xs-2 "></div>
+
+
+                        <div class="col-xs-10">
+                          <button type="submit" name="x" class="btn btn-default join_btn no-radius" name="x">Join now</button>
+                        </div>
+                        <div class="col-xs-2 "></div>
+
+                      </div>
+
+
+                    </div>
+                  </div>
+
+                  <div class="col-sm-2 col-xs-2">
+                    <div class="pull-right">
+                      <div>
+                        <i class="fa fa-twitter fa-2x pull-right" aria-hidden="true" style="margin-left:15%; margin-top: 40%;"></i>
+                        <i class="fa fa-facebook fa-2x pull-right" aria-hidden="true" style="margin-top: 40%;"></i>
+                      </div>
+                      <ul style="list-style: none; margin-top: 26%; overflow: auto;" class="pull-right">
+                        <li><a href="#" data-toggle="modal" data-target="#ContactUs" style="color: #FFFFFF; padding-bottom: 5px;white-space: nowrap;" class="pull-right">Contact us</a></li>
+                        <li><a href="#" style="color: #FFFFFF" class="pull-right">Policies</a></li>
+                      </ul>
+                    </div> 
+                  </div>
+                </div>
+
+                <div class="row mariam newnew">
+                  <div class="col-xs-6">
+                    <img src="../images/newlogo1.png" height="140" style="margin-top: -2%; margin-left: -10%;">
+                  </div>
+
+                  <div class="col-xs-6">
+                    <div class="pull-right">
+                      <div>
+                        <i class="fa fa-twitter fa-2x pull-right" aria-hidden="true" style="margin-left:15%; margin-top: 30%;"></i>
+                        <i class="fa fa-facebook fa-2x pull-right" aria-hidden="true" style="margin-top: 30%;"></i>
+                      </div>
+                      <ul style="list-style: none; margin-top: 26%; overflow: auto;" class="pull-right">
+                        <li><a href="#" data-toggle="modal" data-target="#ContactUs" style="color: #FFFFFF; padding-bottom: 5px;white-space: nowrap;" class="pull-right">Contact us</a></li>
+                        <li><a href="#" style="color: #FFFFFF" class="pull-right">Policies</a></li>
+                      </ul>
+                    </div> 
+                  </div>
+
+                  <div class="col-xs-12">
+                    <div class="footer-form">
+                      <label  class="label-footer">Join now to get the latest offers</label>
+                      <div class="row mariam">
+                        <div class="col-xs-8">
+                          <input type="text" class="form-control no-radius footer-text" placeholder="Enter your e-mail">
+                        </div>
+                        <div class="col-xs-4">
+                          <button type="submit" name="x" class="btn btn-default join_btn no-radius" name="x" >Join now</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+
+              </div>
+            </div>
+          </footer>
+
+<!-- END FOOTER -->
+
+
+  <!-- LOG IN MODAL -->
+
+  <div class="modal fade" id="LogIn" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+          <h3 class="modal-title" id="lineModalLabel"> <strong> Log in to your account</strong></h3>
+        </div>
+
+        <div class="modal-body">
+          <form class="popup-form">
+
+            <div class="form-group">
+              <label name="x">Email Address</label>
+
+              <input type="email" class="form-control" style="background-color: #ececed; border:0; height: 45px;">
+            </div>
+
+            <div class="form-group">
+              <label name="x">Password</label>
+              <input type="password" class="form-control" style="background-color: #ececed; border:0; height: 45px;">
+            </div>
+
+            <label>Don't have an account? </label><a href="Register.html" style="color: #1f87e6"> Create one now</a>
+
+            <center>
+            <button name="xx" type="submit" class="btn popup-btn">Log in</button>
+              
+            </center>
+
+          </form>
+        </div >
+
+        <div class="modal-footer">
+          <div class="modal-footer-text">
+            <h4><span>Or you can log in</span></h4>
+          </div>
+          <div class="container-fluid text-center">
+
+            <div class="row mariam">
+              <div class="col-sm-6 col-xs-12">
+                <button name="tw" type="submit" class="btn btn-default twitter-btn"><i class="fa fa-twitter fa-2" aria-hidden="true"></i>   with twitter</button>
+              </div>
+              <div class="col-sm-6 col-xs-12">
+                <button name="fb" type="submit" class="btn btn-default fb-btn"> <i class="fa fa-facebook fa-2" aria-hidden="true"></i>   with facebook</button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- END LOG IN MODAL -->
+
+
+
+  <!-- CONTACT US MODAL -->
+
+  <div class="modal fade" id="ContactUs" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+          <h3 class="modal-title" id="lineModalLabel"><strong>Contact us</strong></h3>
+        </div>
+
+        <div class="modal-body">
+          <form class="popup-form">
+            <div class="form-group">
+              <label name="x">Name</label>
+              <input type="text" class="form-control" style="background-color: #ececed; border:0; height: 45px;">
+            </div>
+
+            <div class="form-group">
+              <label name="x">Email Address</label>
+              <input type="email" class="form-control" style="background-color: #ececed; border:0; height: 45px;">
+            </div>
+
+            <div class="form-group">
+              <label name="x">Subject</label>
+              <input type="text" class="form-control" style="background-color: #ececed; border:0; height: 45px;">
+            </div>
+
+            <div class="form-group">
+              <label name="x">Message</label>
+              <textarea class="form-control" rows="5" style="background-color: #ececed; border:0;"></textarea>
+
+            </div>
+
+            <center>
+              <button type="submit" name="xx" class="btn popup-btn">Send message</button>
+            </center>
+          </form>
+        </div >
+
+      </div>
+    </div>
+  </div>
+
+  <!-- END CONTACT US MODAL -->
+
+
+<!-- jQuery -->
+<script src="../js/jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="../js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
